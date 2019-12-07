@@ -1,29 +1,55 @@
 ## Portfolio
 
+<!-- Templates 
+[Energize](/sample_page)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+[Flappy Bird VHDL](/pdf/sample_presentation.pdf)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+[Bakugan Rerolled](http://example.com/)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+-->
+
 ---
 
-### Category Name 1 
+### Video Games
 
-[Project 1 Title](/sample_page)
+[Energize](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Flappy Bird VHDL](/pdf/FlappyBirdVHDLReport.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+[Bakugan Rerolled](http://example.com/)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+---
+[Outerstellar](http://example.org/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 
-### Category Name 2
+## Embedded Systems
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+---
+[Model Fusion Video Analytics System](/pdf/MFVASPresentation.pdf)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+---
+[Flik](/Flik)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+---
+
+### Miscellaneous
+
+- [Dotfiles](http://github.com/Matteas-Eden/dotfiles)
+- [AUCS Hackathon 2019](http://github.com/Matteas-Eden/AUCS_Hackathon_2019)
+- [Anzen](http://github.com/Matteas-Eden/AnzenSite)
 
 ---
 

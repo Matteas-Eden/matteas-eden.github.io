@@ -41,14 +41,14 @@
 
 ---
 [Flik](/Flik)
-<img src="images/flik-picture.png?raw=true"/>
+<img src="images/flik-picture.jpg?raw=true"/>
 
 ---
 
 ## Full-Stack Development
 
 [Anzen](/Anzen)
-<img src="images/anzen-login-screenshot?raw=true"/>
+<img src="images/anzen-login-screenshot.png?raw=true"/>
 
 ---
 

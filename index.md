@@ -14,7 +14,7 @@
 
 ---
 
-### Video Games
+## Video Games
 
 [Energize](/energize)
 <img src="images/energize-screenshot.png?raw=true"/>

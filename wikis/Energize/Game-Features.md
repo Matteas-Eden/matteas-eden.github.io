@@ -5,6 +5,7 @@ The requirements of the project were that a player could move (and collide) with
 ## Extra Features
 ### Adjustable Difficulty
 As everyone is different in some way or another, its important to account for this in deciding on the difficulty of a game. To account for a variety of skills and abilities of prospective players, the user can choose between 3 levels of difficulty. "Easy" for those who struggle, "Hard" for those who want a challenge and "Normal" for anyone else who does not fall into either of these categories or who has not played the game before.
+
 ### Inventory & Items
 There are a total of 5 unique items that the player can pick up and use during their playthrough of the game, with each one being managed by the inventory system. While the player can only equip one item at a time, they can hold an unlimited number of items in their inventory. These items have powerful effects that aid the player, such as restoring health or freezing enemies.
 

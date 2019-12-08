@@ -16,7 +16,7 @@
 
 ### Video Games
 
-[Energize](/Energize)
+[Energize](/energize)
 <img src="images/energize-screenshot.png?raw=true"/>
 
 ---
@@ -29,7 +29,7 @@
 <img src="images/bakugan-rerolled-logo.png?raw=true"/>
 
 ---
-[Outerstellar](/Outerstellar)
+[Outerstellar](/outerstellar)
 <img src="images/dummy-thumbnail.jpg?raw=true"/>
 
 ---
@@ -40,14 +40,14 @@
 <img src="images/dummy-thumbnail.jpg?raw=true"/>
 
 ---
-[Flik](/Flik)
+[Flik](/flik)
 <img src="images/flik-picture.jpg?raw=true"/>
 
 ---
 
 ## Full-Stack Development
 
-[Anzen](/Anzen)
+[Anzen](/anzen)
 <img src="images/anzen-login-screenshot.png?raw=true"/>
 
 ---

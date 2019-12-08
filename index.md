@@ -1,4 +1,4 @@
-## Portfolio
+# Projects
 
 <!-- Templates 
 [Energize](/sample_page)

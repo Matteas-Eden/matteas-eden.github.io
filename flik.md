@@ -1,2 +1,2 @@
 ## Flik
-***Under Construction***
+**Project description:** Coming Soon<sup>TM</sup>

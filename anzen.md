@@ -2,7 +2,7 @@
 
 **Project description:**
 
-Anzen is a webapp designed for messaging and interacting with other users on a hybrid peer-to-peer network that supports the latest versions of Chrome and Firefox. Anzen runs on a CherryPy server written in Python3, with a database backend supported using SQLite for Python. The front end uses Jinja for templating the HTML and Ajax for managing the background tasks in Javascript. 
+Anzen is a webapp designed for messaging and interacting with other users on a hybrid peer-to-peer network that supports the latest versions of Chrome and Firefox. Anzen runs on a CherryPy server written in Python3, with a database backend using SQLite for Python. The front end uses Jinja for templating the HTML and Ajax for managing the background tasks with Javascript. 
 
 "Anzen" is the Japanese word for security, chosen due to the project's major focus on privacy, consent, and security. When using the site, a user can be ensured that all of their messages are encrypted and that incoming messages have not been tampered with. 
 
@@ -28,7 +28,7 @@ The next step is to retrieve the user's private data, which contains the user's 
 
 Once a user has logged in, they are able to access the main screen of Anzen.
 
-![Main Screen](/images/dummy-thumbnail.jpg)
+![Main Screen](/images/mainpage-screenshot.png)
 
 Without having to navigate to other screens, the user will be able to identify who the currently active users are, view all received broadcasts and send a broadcast to other users.
 

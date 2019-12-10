@@ -1,5 +1,7 @@
 # Energize
 
+![Main Menu](/images/energize-title-screen.png)
+
 **Project Description**
 
 Energize (*Nocturnal Tutelage Studios*, 2019) is a clone of Legend of Zelda (*Nintendo*, 1986) created in Java using the JavaFX graphics library. Energize was made for COMPSYS 302 "Design: Software Practice" at the University of Auckland, New Zealand (not to be confused with Auckland, California).

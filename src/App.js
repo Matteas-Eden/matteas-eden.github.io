@@ -15,7 +15,7 @@ function App() {
         <a
           className="App-link"
           href="http://matteas-eden.github.io/jekyll-site"
-          target="_blank"
+          target="_self"
           rel="noopener noreferrer"
         >
           The actual site can be found here

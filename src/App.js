@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>int main(int argc, char **argv) { puts("Hello World!"); }</code>
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://matteas-eden.github.io/jekyll-site"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          The actual site can be found here
         </a>
       </header>
     </div>

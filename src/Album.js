@@ -79,23 +79,23 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
+              ようこそ！
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+          This is my personal website I created using React to showcase the various projects I have worked
+	  on over the past few years. It doesn't have much yet, but I'm hoping to change that as time goes on.
+	  So, make sure to keep watching this space!
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
+                  <Button variant="contained" color="primary" href="http://matteas-eden.github.io/jekyll-site">
+                    Jekyll Portfolio
                   </Button>
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary">
-                    Secondary action
+                    To be implemented
                   </Button>
                 </Grid>
               </Grid>

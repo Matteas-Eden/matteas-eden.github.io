@@ -196,7 +196,7 @@ export default function Album() {
                       Hero of Konoha
                     </Typography>
                     <Typography>
-                      A Flappy Bird clone made in VHDL, themed after <i>Naruto</i> from <i>Naruto</i>.
+                      A Flappy Bird clone made in VHDL, themed after the character <i>Naruto</i> from <i>Naruto</i>.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -265,7 +265,14 @@ export default function Album() {
                       Model Fusion Video Analytics System 
                     </Typography>
                     <Typography>
-                      An evaluation of a person-tracking system designed by <a href="http://www.andrewchen.nz">Dr Andrew Chen</a>.
+                      An evaluation of a person-tracking system designed by 
+                      <a 
+                      className="App-link"
+                      href="http://www.andrewchen.nz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
+                        Dr Andrew Chen</a>.
                     </Typography>
                   </CardContent>
                   <CardActions>

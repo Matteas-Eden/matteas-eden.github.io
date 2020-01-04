@@ -265,14 +265,12 @@ export default function Album() {
                       Model Fusion Video Analytics System 
                     </Typography>
                     <Typography>
-                      An evaluation of a person-tracking system designed by 
-                      <a 
+                      An evaluation of a person-tracking system designed by <a 
                       className="App-link"
                       href="http://www.andrewchen.nz"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >
-                        Dr Andrew Chen</a>.
+                      >Dr Andrew Chen</a>.
                     </Typography>
                   </CardContent>
                   <CardActions>

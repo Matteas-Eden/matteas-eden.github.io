@@ -69,10 +69,8 @@ export default function Album() {
   const classes = useStyles();
   var keyIndex = 1;
 
-  return (
-    <React.Fragment>
-      <CssBaseline />
-      <AppBar position="relative">
+  /**
+   * <AppBar position="relative">
         <Toolbar>
           <CameraIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
@@ -80,6 +78,11 @@ export default function Album() {
           </Typography>
         </Toolbar>
       </AppBar>
+   */
+
+  return (
+    <React.Fragment>
+      <CssBaseline />
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -262,7 +265,7 @@ export default function Album() {
                       Model Fusion Video Analytics System 
                     </Typography>
                     <Typography>
-                      An evaluation of person-tracking system designed by <a href="http://www.andrewchen.nz">Dr Andrew Chen</a>.
+                      An evaluation of a person-tracking system designed by <a href="http://www.andrewchen.nz">Dr Andrew Chen</a>.
                     </Typography>
                   </CardContent>
                   <CardActions>

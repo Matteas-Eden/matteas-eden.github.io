@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad1dc09bdb45f87175b5b6a7e8019871",
+    "revision": "8404af987b602276d35d3f2b091c1f67",
     "url": "/index.html"
   },
   {
-    "revision": "3f0d61c4e1d35aba65b3",
+    "revision": "355575d12c22ba6a265e",
     "url": "/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.4b4d522f.chunk.js.LICENSE"
   },
   {
-    "revision": "3f0d61c4e1d35aba65b3",
-    "url": "/static/js/main.8671b966.chunk.js"
+    "revision": "355575d12c22ba6a265e",
+    "url": "/static/js/main.96f4b4b9.chunk.js"
   },
   {
     "revision": "1ce604afea1c0ce04083",
     "url": "/static/js/runtime-main.be61ab02.js"
+  },
+  {
+    "revision": "e3a488e698438355db2310ae0224f08b",
+    "url": "/static/media/anzen-login-screenshot.e3a488e6.png"
   },
   {
     "revision": "dd60812a33aa4d0b7db600df1f617f2a",
@@ -38,9 +42,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "676f0fb59baa08842346a8b19798ec09",
     "url": "/static/media/flik-picture.676f0fb5.jpg"
-  },
-  {
-    "revision": "8cf57e549c8bdf26f52ad3cd822e0974",
-    "url": "/static/media/mainpage-screenshot.8cf57e54.png"
   }
 ]);

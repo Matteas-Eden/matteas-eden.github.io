@@ -285,12 +285,12 @@ export default function Album() {
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Typography variant="h6" align="center" color="textSecondary" gutterBottom>
+        {/* <Typography variant="h6" align="center" color="textSecondary" gutterBottom>
           Footer
+        </Typography> */}
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+                Source for this site taken from <a href="https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/album">here. </a>
         </Typography>
-	 <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Source for this site taken from <a href="https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/album">here. </a>
-	  </Typography>
         <Copyright />
       </footer>
       {/* End footer */}

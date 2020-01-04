@@ -14,7 +14,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
-import EnergizeTitle from './images/energize-title-screen.png';
+import EnergizeScreenshot from './images/energize-screenshot.png';
+import FlikPic from './images/flik-picture.jpg';
+import BakuganLogo from './images/bakugan-rerolled-logo.png';
+import HeroOfKonoha from './images/flappy-bird-pic.jpeg';
+import AnzenMain from './images/mainpage-screenshot.png';
 
 
 function Copyright() {
@@ -65,6 +69,7 @@ const cards = [2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   const classes = useStyles();
+  var keyIndex = 1;
 
   return (
     <React.Fragment>
@@ -109,19 +114,19 @@ export default function Album() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {/* Energize */}
-            <Grid item key={1} xs={12} sm={6} md={4}>
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={EnergizeTitle}
+                    image={EnergizeScreenshot}
                     title="Energize"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Energize
                     </Typography>
                     <Typography>
-                      A Zelda-clone made with JavaFX with LAN Multiplayer.
+                      A Zelda-clone made with JavaFX that supports LAN Multiplayer.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -131,9 +136,147 @@ export default function Album() {
                   </CardActions>
                 </Card>
               </Grid>
+            {/* Outerstellar */}
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://source.unsplash.com/random"
+                    title="Outerstellar"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Outerstellar
+                    </Typography>
+                    <Typography>
+                      A top-down arcade shooter made in 5 days for an Arcade Games Hackathon.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </CardActions>
+                </Card>
+            </Grid>
+            {/* Bakugan Rerolled */}
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={BakuganLogo}
+                    title="Bakugan Rerolled"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Bakugan Rerolled
+                    </Typography>
+                    <Typography>
+                      A JavaFX game that simulates the battle system from <i>Bakugan Battle Brawlers</i>.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </CardActions>
+                </Card>
+            </Grid>
+            {/* Flappy Bird */}
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={HeroOfKonoha}
+                    title="Hero of Konoha"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Hero of Konoha
+                    </Typography>
+                    <Typography>
+                      A Flappy Bird clone made in VHDL, themed after <i>Naruto</i> from <i>Naruto</i>.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </CardActions>
+                </Card>
+            </Grid>
+            {/* Anzen */}
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={AnzenMain}
+                    title="Anzen"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Anzen
+                    </Typography>
+                    <Typography>
+                      A webapp for messaging other users on a hybrid P2P network.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </CardActions>
+                </Card>
+            </Grid>
+            {/* Flik */}
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={FlikPic}
+                    title="Flik"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Flik
+                    </Typography>
+                    <Typography>
+                      A line-following robot designed to navigate a Pacman-like maze.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </CardActions>
+                </Card>
+            </Grid>
+            {/* MFVAS */}
+            <Grid item key={keyIndex++} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://source.unsplash.com/random"
+                    title="Model Fusion Video Analytics System"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Model Fusion Video Analytics System 
+                    </Typography>
+                    <Typography>
+                      An evaluation of person-tracking system designed by <a href="http://www.andrewchen.nz">Dr Andrew Chen</a>.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </CardActions>
+                </Card>
+            </Grid>
             {/* Example */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card+10} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}

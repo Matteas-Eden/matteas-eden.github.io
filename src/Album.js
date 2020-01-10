@@ -103,8 +103,8 @@ export default function Album() {
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
-                    To be implemented
+                  <Button variant="outlined" color="primary" href="http://github.com/matteas-eden">
+                    Github Profile
                   </Button>
                 </Grid>
               </Grid>

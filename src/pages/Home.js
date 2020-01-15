@@ -21,13 +21,11 @@ import {
 	Link as NavLink
 } from 'react-router-dom';
 
-import EnergizeScreenshot from './images/energize-screenshot.png';
-import FlikPic from './images/flik-picture.jpg';
-import BakuganLogo from './images/bakugan-rerolled-logo.png';
-import HeroOfKonoha from './images/flappy-bird-pic.jpeg';
-import AnzenMain from './images/anzen-login-screenshot.png';
-
-import LinkButton from './components/LinkButton';
+import EnergizeScreenshot from '../images/energize-screenshot.png';
+import FlikPic from '../images/flik-picture.jpg';
+import BakuganLogo from '../images/bakugan-rerolled-logo.png';
+import HeroOfKonoha from '../images/flappy-bird-pic.jpeg';
+import AnzenMain from '../images/anzen-login-screenshot.png';
 
 function Copyright() {
   return (

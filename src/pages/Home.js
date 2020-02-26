@@ -24,7 +24,7 @@ import {
 import EnergizeScreenshot from '../images/energize-screenshot.png';
 import FlikPic from '../images/flik-picture.jpg';
 import BakuganLogo from '../images/bakugan-rerolled-logo.png';
-import HeroOfKonoha from '../images/flappy-bird-pic.jpeg';
+import HeroOfKonohaPic from '../images/flappy-bird-pic.jpeg';
 import AnzenMain from '../images/anzen-login-screenshot.png';
 
 function Copyright() {
@@ -140,7 +140,7 @@ export default function Album() {
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button component={NavLink} to="/anzen" variant="outlined" color="primary">
+                <Button variant="outlined" color="primary" href="https://github.com/Matteas-Eden">
                     Github
                   </Button>
                 </Grid>
@@ -164,15 +164,15 @@ export default function Album() {
 	  	description="16 hour days at University."
 	  	link="/flik" 
 	  />
-	  <ProjectCard key={keyIndex++} image={HeroOfKonoha} title="Hero of Konoha" 
+	  <ProjectCard key={keyIndex++} image={HeroOfKonohaPic} title="Hero of Konoha" 
 	  	description="Naruto-themed flappy bird clone, believe it!"
 	  	link="/hero-of-konoha" 
 	  />
-	  <ProjectCard key={keyIndex++} image={HeroOfKonoha} title="Model Fusion Video Analytics System" 
+	  <ProjectCard key={keyIndex++} image={HeroOfKonohaPic} title="Model Fusion Video Analytics System" 
 	  	description="A summer research project investigating the menu at Ichiban"
 	  	link="/mfvas" 
 	  />
-	  <ProjectCard key={keyIndex++} image={HeroOfKonoha} title="Outerstellar" 
+	  <ProjectCard key={keyIndex++} image={HeroOfKonohaPic} title="Outerstellar" 
 	  	description="One of my proudest accomplishments"
 	  	link="/outerstellar" 
 	  />

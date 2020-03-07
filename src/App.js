@@ -1,15 +1,54 @@
 import React from 'react';
-import Album from './Album';
+
+import Home from './pages/Home';
+import Anzen from './pages/Anzen';
+import BakuganRerolled from './pages/BakuganRerolled';
+import Energize from './pages/Energize';
+import Flik from './pages/Flik';
+import HeroOfKonoha from './pages/HeroOfKonoha';
+import MFVAS from './pages/MFVAS';
+import Outerstellar from './pages/Outerstellar';
 // import logo from './logo.svg';
 import './App.css';
 
+import {
+	BrowserRouter as Router,
+	Route,
+	Switch,
+	Link as NavLink
+} from 'react-router-dom'
+
 function App() {
   return (
+   <Router>
     <div className="App">
-      <header className="App-header">
-	      <Album/>
-      </header>
+     <header className="App-header">
+     <Switch>
+     <Route exact path="/">
+	  <Home />
+     </Route>
+     <Route exact path="/anzen">
+	  <Anzen />
+     </Route>
+     <Route exact path="/bakugan-rerolled">
+	  <BakuganRerolled />
+     </Route>
+     <Route exact path="/energize">
+	  <Energize />
+     </Route>
+     <Route exact path="/flik">
+	  <Flik />
+     </Route>
+     <Route exact path="/mfvas">
+	  <MFVAS />
+     </Route>
+     <Route exact path="/outerstellar">
+	  <Outerstellar />
+     </Route>
+     </Switch>
+     </header>
     </div>
+   </Router>
   );
 }
 

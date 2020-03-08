@@ -1,15 +1,19 @@
 import React from 'react';
 
 import Main from './pages/Main';
-import Error404 from './pages/Error404'
+import Home from './pages/Home'
+import About from './pages/About';
+import CV from './pages/CV';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import Error404 from './pages/Error404';
 // import logo from './logo.svg';
 import './App.css';
 
 import {
 	BrowserRouter as Router,
 	Route,
-	Switch,
-	Link as NavLink
+	Switch
 } from 'react-router-dom'
 
 function App() {
@@ -17,10 +21,22 @@ function App() {
   <Router>
     <div className="App">
       <header className="App-header">
+        <Main />
         <Switch>
           <Route exact path="/">
-            <Main />
-            {/* <h1>This site is under construction</h1> */}
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/cv">
+            <CV />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/projects">
+            <Projects />
           </Route>
           <Route exact path="*">
             <Error404 />
@@ -31,21 +47,5 @@ function App() {
   </Router>
   );
 }
-
-/**
- * <img src={logo} className="App-logo" alt="logo" />
-        <pre>
-          <code>
-	  	puts("Hello World!");
-	  </code>
-        </pre>
-        <a
-          className="App-link"
-          href="http://matteas-eden.github.io/jekyll-site"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          The actual site can be found here
-        </a> */ 
 
 export default App;

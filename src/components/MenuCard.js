@@ -10,10 +10,10 @@ class MenuCard extends React.Component {
   }
   render() {
     return (
-      <div className="menuCard">
+      <div className="test">
         <Grid container>
           <Grid item sm>
-            <SignatureLogo />
+          <img src={SignatureLogo} className="App-logo" alt="logo" />
           </Grid>
           {/* <Grid item sm>
             <NavMenu items={["About", "Projects", "Resume", "Contract"]} />

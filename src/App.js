@@ -1,13 +1,7 @@
 import React from 'react';
 
-import Home from './pages/Home';
-import Anzen from './pages/Anzen';
-import BakuganRerolled from './pages/BakuganRerolled';
-import Energize from './pages/Energize';
-import Flik from './pages/Flik';
-import HeroOfKonoha from './pages/HeroOfKonoha';
-import MFVAS from './pages/MFVAS';
-import Outerstellar from './pages/Outerstellar';
+import Main from './pages/Main';
+import Error404 from './pages/Error404'
 // import logo from './logo.svg';
 import './App.css';
 
@@ -20,35 +14,21 @@ import {
 
 function App() {
   return (
-   <Router>
+  <Router>
     <div className="App">
-     <header className="App-header">
-     <Switch>
-     <Route exact path="/">
-	  <Home />
-     </Route>
-     <Route exact path="/anzen">
-	  <Anzen />
-     </Route>
-     <Route exact path="/bakugan-rerolled">
-	  <BakuganRerolled />
-     </Route>
-     <Route exact path="/energize">
-	  <Energize />
-     </Route>
-     <Route exact path="/flik">
-	  <Flik />
-     </Route>
-     <Route exact path="/mfvas">
-	  <MFVAS />
-     </Route>
-     <Route exact path="/outerstellar">
-	  <Outerstellar />
-     </Route>
-     </Switch>
-     </header>
+      <header className="App-header">
+        <Switch>
+          <Route exact path="/">
+            <Main />
+            {/* <h1>This site is under construction</h1> */}
+          </Route>
+          <Route exact path="*">
+            <Error404 />
+          </Route>
+        </Switch>
+      </header>
     </div>
-   </Router>
+  </Router>
   );
 }
 

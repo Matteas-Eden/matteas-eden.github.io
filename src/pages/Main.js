@@ -12,7 +12,6 @@ class Main extends React.Component{
         return (
             <Grid container>
                 <MenuCard />
-                <h1>Under construction</h1>
             </Grid>
         )
     }

@@ -21,10 +21,8 @@ class NavMenu extends React.Component {
         if (items) {
             return (
                 <div className="navMenu">
-                    <ul>
-                        {items.map((item, index) => 
-                            <MenuItem item={item} onClick={console.log("Clicked an item")} />)}
-                    </ul>
+                    {items.map((item, index) => 
+                        <MenuItem key={index} item={item} onClick={console.log("Clicked an item")} />)}
                 </div>
             );
         } else {

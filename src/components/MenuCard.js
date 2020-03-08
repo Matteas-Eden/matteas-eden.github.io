@@ -1,8 +1,9 @@
 import React from 'react';
 import NavMenu from './NavMenu';
 import LanguageSwitcher from './LanguageSwitcher';
-import Grid from '@material-ui/core/Grid';
+import { Grid, Box, Divider } from '@material-ui/core';
 import SignatureLogo from '../logo.svg';
+import '../menu.css';
 
 class MenuCard extends React.Component {
   constructor(props) {
@@ -10,17 +11,19 @@ class MenuCard extends React.Component {
   }
   render() {
     return (
-      <div className="test">
-        <Grid container>
+      <div className="MenuCard">
+        <Grid container direction={'column'} spacing={3}>
           <Grid item sm>
           <img src={SignatureLogo} className="App-logo" alt="logo" />
           </Grid>
-          {/* <Grid item sm>
-            <NavMenu items={["About", "Projects", "Resume", "Contract"]} />
+          <Divider />
+          <Grid item sm>
+            <NavMenu items={["About", "Projects", "Resume", "Contact"]} />
           </Grid>
+          <Divider />
           <Grid item sm>
             <LanguageSwitcher />
-          </Grid> */}
+          </Grid>
         </Grid>
       </div>
     );

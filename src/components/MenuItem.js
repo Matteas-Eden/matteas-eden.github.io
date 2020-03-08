@@ -1,10 +1,12 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
+import { Typography, Button } from '@material-ui/core';
 
 function MenuItem(props) {
     return (
-        <Typography>{props.item}</Typography>
+        <Button onClick={() => {console.log("Hello, you asked for me?")}}>
+            <Typography>{props.item}</Typography>
+        </Button>
     );
 }
 

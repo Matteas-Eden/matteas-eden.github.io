@@ -19,7 +19,7 @@ export const App = () => {
           <Route exact path="/">
             <Construction />
           </Route>
-          <Route exact path="*">
+          <Route path="*">
             <Error404 />
           </Route>
         </Switch>

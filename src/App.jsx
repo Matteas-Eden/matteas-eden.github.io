@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Construction from './pages/Construction';
-import Error404 from './pages/Error404';
+import { Construction } from './pages/Construction';
+import { Error404 } from './pages/Error404';
 import './App.css';
 
 import {
@@ -15,7 +15,6 @@ export const App = () => {
   <Router>
     <div className="App">
       <header className="App-header">
-        <Main />
         <Switch>
           <Route exact path="/">
             <Construction />

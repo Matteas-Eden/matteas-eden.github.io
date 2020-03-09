@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
-  background-image: url(https://images4.alphacoders.com/746/thumb-1920-746386.png);
+  background-color: #282c34;
+  /* background-image: url(https://images4.alphacoders.com/746/thumb-1920-746386.png); */
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

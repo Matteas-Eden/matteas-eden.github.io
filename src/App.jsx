@@ -7,7 +7,8 @@ import './App.css';
 import {
 	BrowserRouter as Router,
 	Route,
-	Switch
+	Switch,
+  Redirect
 } from 'react-router-dom'
 
 export const App = () => {
@@ -19,9 +20,13 @@ export const App = () => {
           <Route exact path="/">
             <Construction />
           </Route>
-          <Route path="*">
+          <Route exact path="/roll-for-reaction">
+            <Redirect to="/softeng-750-react-rpg"/>
+          </Route>
+          <Route path="/404">
             <Error404 />
           </Route>
+          <Redirect to="/404" />
         </Switch>
       </header>
     </div>

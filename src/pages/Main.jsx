@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid, Paper } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import {
     BrowserRouter as Router,
     Route,
@@ -15,20 +15,31 @@ import { Contact } from './Contact';
 import { CV } from './CV';
 import { Projects } from './Projects';
 
+// import { ReactComponent as Logo } from '../assets/images/SignatureBasic.svg';
+import { SignatureBasic } from '../components/SignatureBasic';
+import { SignatureCalligraphy } from '../components/SignatureCalligraphy';
 import '../styles/main.css';
 
 export const Main = () => {
     return (
         <Router>
             <div className="main">
-                <Grid container direction="row" align="center" justify="center">
+                <Grid
+                    container
+                    direction="row"
+                    align="center"
+                    justify="center"
+                    spacing={3}
+                >
                     <div className="menu">
+                        <Typography variant="h3">Menu</Typography>
+                        <SignatureBasic size="10em" />
+                        <SignatureCalligraphy size="10em" />
                         {/* <NavMenu /> */}
-                        <p>Hello</p>
                     </div>
 
                     <div className="content">
-                        <Paper className="display-content">
+                        <div className="display-content">
                             <Switch>
                                 <Route exact path="/">
                                     <Home />
@@ -47,7 +58,7 @@ export const Main = () => {
                                 </Route>
                                 <Redirect to="/" />
                             </Switch>
-                        </Paper>
+                        </div>
                     </div>
                 </Grid>
             </div>

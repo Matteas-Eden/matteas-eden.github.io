@@ -2,14 +2,13 @@ import React from 'react';
 import MenuItem from './MenuItem';
 
 class NavMenu extends React.Component {
-
     constructor(props) {
         super(props);
         const items = props.items;
 
         if (items) {
             this.state = {
-                items: items
+                items: items,
             };
         } else {
             this.state = { items: null };
@@ -21,8 +20,13 @@ class NavMenu extends React.Component {
         if (items) {
             return (
                 <div className="navMenu">
-                    {items.map((item, index) => 
-                        <MenuItem key={index} item={item} onClick={console.log("Clicked an item")} />)}
+                    {items.map((item, index) => (
+                        <MenuItem
+                            key={index}
+                            item={item}
+                            onClick={console.log('Clicked an item')}
+                        />
+                    ))}
                 </div>
             );
         } else {

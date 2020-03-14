@@ -1,9 +1,40 @@
-.content-display {
-    width: 10rem;
-    height: 20rem;
+.menu {
+    width: 20rem;
+    height: 35rem;
+    background-attachment: fixed;
+    background-color: rgba(215, 0, 235, 0.5);
+}
+
+.content {
+    width: 50rem;
+    height: 35rem;
+    float: right;
+    background-color: rgba(200, 100, 0, 0.5);
+}
+
+.display-content {
+    width: inherit;
+    height: inherit;
 }
 
 .nav-menu {
     width: 10rem;
     height: 10rem;
+}
+
+.main {
+    /* background-color: #282c34; */
+    background-image: url(https://images4.alphacoders.com/746/thumb-1920-746386.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
 }

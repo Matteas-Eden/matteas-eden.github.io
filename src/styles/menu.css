@@ -1,13 +1,13 @@
 .MenuCard {
     /* background-color: #AAAAAA; */
-    color: #FFFFFF;
+    color: #ffffff;
     /* filter: blur(1px) brightness(1.0); */
     padding: 1em 1em 1em 5em;
     width: 3em;
 }
 
 .menuItem {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .App-logo {
@@ -16,5 +16,5 @@
 }
 
 .MuiDivider-root {
-    color:#FFFFFF;
+    color: #ffffff;
 }

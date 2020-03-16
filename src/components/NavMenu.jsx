@@ -1,38 +1,25 @@
 import React from 'react';
 import MenuItem from './MenuItem';
+import { Grid } from '@material-ui/core';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { SignatureCalligraphy } from './SignatureCalligraphy';
 
-class NavMenu extends React.Component {
-    constructor(props) {
-        super(props);
-        const items = props.items;
-
-        if (items) {
-            this.state = {
-                items: items,
-            };
-        } else {
-            this.state = { items: null };
-        }
-    }
-
-    render() {
-        const items = this.state.items;
-        if (items) {
-            return (
-                <div className="navMenu">
-                    {items.map((item, index) => (
-                        <MenuItem
-                            key={index}
-                            item={item}
-                            onClick={console.log('Clicked an item')}
-                        />
-                    ))}
-                </div>
-            );
-        } else {
-            return <p>No items</p>;
-        }
-    }
-}
-
-export default NavMenu;
+export const NavMenu = props => {
+    const items = props.items;
+    const logo = props.logo;
+    return (
+        <div className="nav-menu">
+            <Grid container direction="column" spacing={5}>
+                <SignatureCalligraphy size="100px" />
+                {items.map((item, index) => (
+                    <MenuItem
+                        key={index}
+                        item={item}
+                        onClick={console.log('Clicked an item')}
+                    />
+                ))}
+                <LanguageSwitcher />
+            </Grid>
+        </div>
+    );
+};

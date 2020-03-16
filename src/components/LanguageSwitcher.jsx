@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
-export default function LanguageSwitcher(props) {
+export const LanguageSwitcher = () => {
     return <Typography>English</Typography>;
-}
+};

@@ -6,7 +6,6 @@ import { SignatureCalligraphy } from './SignatureCalligraphy';
 
 export const NavMenu = props => {
     const items = props.items;
-    const logo = props.logo;
     return (
         <div className="nav-menu">
             <Grid container direction="column" spacing={5}>

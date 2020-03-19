@@ -1,8 +1,7 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import { Typography, Button } from '@material-ui/core';
 
-function MenuItem(props) {
+export const MenuItem = props => {
     return (
         <Button
             onClick={() => {
@@ -12,6 +11,4 @@ function MenuItem(props) {
             <Typography>{props.item}</Typography>
         </Button>
     );
-}
-
-export default MenuItem;
+};

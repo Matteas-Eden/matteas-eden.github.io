@@ -24,6 +24,7 @@
 .display-content {
     width: inherit;
     height: inherit;
+    padding: 1rem;
 }
 
 .nav-menu {
@@ -97,7 +98,7 @@
     
     .frosted-glass-content {
         color: white;
-        // padding: 1rem;
+        padding: inherit;
         min-height: 40rem;
         background-color: rgba(255,255,255,0.1);
     }

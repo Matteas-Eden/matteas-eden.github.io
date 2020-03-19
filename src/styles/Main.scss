@@ -1,13 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    outline: 2px solid black;
+}
+
 .menu {
     width: 15rem;
-    height: 35rem;
+    // height: 50rem;
     // background-attachment: fixed;
     // background-color: rgba(215, 0, 235, 0.5);
 }
 
 .content {
-    width: 50rem;
-    // height: 15rem;
+    width: 60rem;
+    // height: 50rem;
     // float: right;
     // background-color: rgba(200, 100, 0, 0.5);
 }
@@ -62,7 +71,7 @@
     bottom: 0;
     left: 0;
     background: inherit;
-    filter: blur(5px);
+    filter: blur(10px);
     margin: -20px;
 }
 
@@ -89,7 +98,7 @@
     .frosted-glass-content {
         color: white;
         // padding: 1rem;
-        min-height: 35rem;
+        min-height: 40rem;
         background-color: rgba(255,255,255,0.1);
     }
 }

@@ -8,7 +8,7 @@ export const MenuItem = props => {
                 console.log('Hello, you asked for me?');
             }}
         >
-            <Typography>{props.item}</Typography>
+            <Typography variant="h6">{props.item}</Typography>
         </Button>
     );
 };

@@ -11,8 +11,8 @@ import { Projects } from '../pages/Projects';
 
 export const Content = props => {
     return (
-        <FrostedGlassView bg={props.bg} className="my-glass">
-            <div className="content">
+        <div className="content card">
+            <FrostedGlassView bg={props.bg} className="my-glass">
                 <div className="display-content">
                     <Switch>
                         <Route exact path="/">
@@ -33,7 +33,7 @@ export const Content = props => {
                         <Redirect to="/" />
                     </Switch>
                 </div>
-            </div>
-        </FrostedGlassView>
+            </FrostedGlassView>
+        </div>
     );
 };

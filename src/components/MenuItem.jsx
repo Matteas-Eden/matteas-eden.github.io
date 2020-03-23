@@ -7,6 +7,7 @@ export const MenuItem = props => {
             onClick={() => {
                 console.log('Hello, you asked for me?');
             }}
+            style={{ textTransform: 'none', height: '3em' }}
         >
             <Typography
                 variant="h6"

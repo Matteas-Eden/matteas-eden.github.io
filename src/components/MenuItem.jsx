@@ -10,7 +10,7 @@ export const MenuItem = props => {
         >
             <Typography
                 variant="h6"
-                style={{ fontFamily: 'Roboto', fontSize: 26 }}
+                style={{ fontFamily: 'high-tower', fontSize: 40 }}
             >
                 {props.item}
             </Typography>

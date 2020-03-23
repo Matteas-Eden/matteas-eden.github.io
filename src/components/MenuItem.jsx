@@ -8,7 +8,12 @@ export const MenuItem = props => {
                 console.log('Hello, you asked for me?');
             }}
         >
-            <Typography variant="h6">{props.item}</Typography>
+            <Typography
+                variant="h6"
+                style={{ fontFamily: 'Roboto', fontSize: 26 }}
+            >
+                {props.item}
+            </Typography>
         </Button>
     );
 };

@@ -6,7 +6,12 @@ export const NavMenu = props => {
     const items = props.items;
     return (
         <div className="nav-menu">
-            <Grid container direction="column" spacing={5}>
+            <Grid
+                container
+                direction="column"
+                alignItems="flex-start"
+                spacing={8}
+            >
                 {items.map((item, index) => (
                     <MenuItem
                         key={index}

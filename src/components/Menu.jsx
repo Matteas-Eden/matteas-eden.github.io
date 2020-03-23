@@ -7,6 +7,18 @@ import { SignatureCalligraphy } from './SignatureCalligraphy';
 
 import { Grid } from '@material-ui/core';
 
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: '1px',
+            width: '15rem',
+            borderStyle: 'hidden',
+        }}
+    />
+);
+
 export const Menu = props => {
     return (
         <div className="menu card">
@@ -18,10 +30,12 @@ export const Menu = props => {
                     justify="center"
                     spacing={3}
                 >
-                    <SignatureCalligraphy size="10em" />
+                    <SignatureCalligraphy size="15rem" />
+                    <ColoredLine color="black" />
                     <NavMenu
                         items={['About', 'Projects', 'My CV', 'Contact']}
                     />
+                    <ColoredLine color="black" />
                 </Grid>
             </FrostedGlassView>
         </div>

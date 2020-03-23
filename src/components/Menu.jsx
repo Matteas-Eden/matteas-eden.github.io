@@ -33,7 +33,7 @@ export const Menu = props => {
                     <SignatureCalligraphy size="15rem" />
                     <ColoredLine color="black" />
                     <NavMenu
-                        items={['About', 'Projects', 'My CV', 'Contact']}
+                        items={['About', 'Projects', 'Resume', 'Contact']}
                     />
                     <ColoredLine color="black" />
                 </Grid>

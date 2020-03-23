@@ -7,12 +7,13 @@ export const MenuItem = props => {
             onClick={() => {
                 console.log('Hello, you asked for me?');
             }}
-            style={{ textTransform: 'none', height: '3em' }}
+            style={{
+                textTransform: 'none',
+                height: '4rem',
+                marginRight: '3em',
+            }}
         >
-            <Typography
-                variant="h6"
-                style={{ fontFamily: 'high-tower', fontSize: 40 }}
-            >
+            <Typography style={{ fontFamily: 'high-tower', fontSize: '4rem' }}>
                 {props.item}
             </Typography>
         </Button>

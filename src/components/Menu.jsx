@@ -4,6 +4,7 @@ import { NavMenu } from './NavMenu';
 import { FrostedGlassView } from './FrostedGlassView';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { SignatureCalligraphy } from './SignatureCalligraphy';
+import { Construction } from '../pages/Construction';
 
 import { Grid } from '@material-ui/core';
 
@@ -36,6 +37,7 @@ export const Menu = props => {
                         items={['About', 'Projects', 'Resume', 'Contact']}
                     />
                     <ColoredLine color="black" />
+                    <Construction />
                 </Grid>
             </FrostedGlassView>
         </div>

@@ -5,8 +5,15 @@ export const Construction = () => {
     return (
         <div className="construction">
             <Grid>
-                <Typography variant="h3">
-                    This page is under construction. Please check back later.
+                <Typography
+                    variant="h6"
+                    style={{
+                        paddingLeft: '1em',
+                        fontFamily: 'garamond',
+                        color: '#000',
+                    }}
+                >
+                    This page is under construction.
                 </Typography>
             </Grid>
         </div>

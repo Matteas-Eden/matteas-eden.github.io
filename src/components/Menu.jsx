@@ -33,9 +33,10 @@ export const Menu = props => {
                 >
                     <SignatureCalligraphy size="15rem" />
                     <ColoredLine color="black" />
-                    <NavMenu
+                    {/* <NavMenu
                         items={['About', 'Projects', 'Resume', 'Contact']}
-                    />
+                    /> */}
+                    <NavMenu />
                     <ColoredLine color="black" />
                     <Construction />
                 </Grid>

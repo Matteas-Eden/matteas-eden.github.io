@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    outline: 2px solid black;
+}
+
+.menu {
+    width: 15rem;
+}
+
+.content {
+    width: 60rem;
+}
+
+.display-content {
+    width: inherit;
+    height: inherit;
+    padding: 1rem;
+}
+
+.nav-menu {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: -50px;
+    width: 11rem;
+    height: 15rem;
+}
+
+.main {
+    /* background-color: #282c34; */
+    /* background-image: url(https://images4.alphacoders.com/746/thumb-1920-746386.png); */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.frosted-glass {
+    &:not(.blue-app-sidebar) {
+        position: relative;
+    }
+
+    overflow: hidden;
+}
+
+.frosted-glass::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.frosted-glass .frosted-glass-content {
+    position: relative;
+}
+
+.frosted-glass .frosted-glass-content::before,
+.frosted-glass .frosted-glass-content::after {
+    content: "";
+    display: table;
+}
+
+.has-frosted-glass {
+    .frosted-glass {
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, .3);
+    }
+}
+
+/* Extra Stuff */
+.my-glass {
+    
+    .frosted-glass-content {
+        color: white;
+        padding: inherit;
+        min-height: 40rem;
+        background-color: rgba(255,255,255,0.1);
+    }
+}
+

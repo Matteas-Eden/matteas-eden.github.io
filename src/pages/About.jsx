@@ -1,4 +1,5 @@
 import React from 'react';
+import { ColouredLine } from '../components/ColouredLine';
 import { Typography } from '@material-ui/core';
 
 export const About = () => {
@@ -24,6 +25,7 @@ export const About = () => {
                 If you'd like to learn more about me, take a look around the
                 website and at the links below.
             </Typography>
+            <ColouredLine color="black" />
         </div>
     );
 };

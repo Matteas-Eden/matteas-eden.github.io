@@ -10,7 +10,7 @@ I decided to learn React; so I made a website. There was a lot of blood, sweat a
 
 ### Deployment
 
-###### TBC
+For automating the deployment of the website to GitHub pages, I created a workflow with GitHub actions that utilises *[Deploy To GitHub Pages](https://github.com/marketplace/actions/deploy-to-github-pages)*.
 
 ### Design
 

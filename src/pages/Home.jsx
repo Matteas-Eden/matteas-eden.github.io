@@ -8,7 +8,7 @@ export const Home = () => {
                 style={{ fontFamily: 'high-tower', color: '#000' }}
                 variant="h3"
             >
-                Hi, I'm Matthew Eden. This is my website.
+                Hi, I'm Matteas Eden. This is my website.
                 <br />
                 It's still under construction at the moment, but make sure to
                 watch this space.
@@ -23,7 +23,7 @@ export const Home = () => {
                 variant="h3"
             >
                 <br />
-                こんにちは、イーデン・マシューです。私のサイトへようこそ。
+                こんにちは、イーデン・マテアスです。私のサイトへようこそ。
                 <br />
                 現在まだ工事中だけど、きっとこのスペースを見続けて！
             </Typography>

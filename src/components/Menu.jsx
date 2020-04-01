@@ -26,7 +26,7 @@ export const Menu = props => {
                         to="/"
                         onClick={console.log('CLICK')}
                     >
-                        <SignatureCalligraphy size="15rem" />
+                        <SignatureCalligraphy size="15vw" />
                     </Button>
                     <ColouredLine color="black" />
                     {/* <NavMenu

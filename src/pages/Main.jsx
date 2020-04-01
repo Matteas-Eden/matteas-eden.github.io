@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Grid, useMediaQuery } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { Menu } from '../components/Menu';
 import { Content } from '../components/Content';
 
@@ -10,8 +10,6 @@ import bgImage from '../assets/images/clay-banks-bg.jpg';
 import '../styles/Main.scss';
 
 export const Main = () => {
-    const matches = useMediaQuery('(min-width:600px) and (min-height:600px)');
-
     const bgImageValue = `url(${bgImage})`;
 
     return (
@@ -30,11 +28,9 @@ export const Main = () => {
                     <Grid item>
                         <Menu bg={bgImageValue} />
                     </Grid>
-                    {matches && (
-                        <Grid item>
-                            <Content bg={bgImageValue} />
-                        </Grid>
-                    )}
+                    <Grid item>
+                        <Content bg={bgImageValue} />
+                    </Grid>
                 </Grid>
             </div>
         </Router>

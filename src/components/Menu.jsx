@@ -7,7 +7,8 @@ import { ColouredLine } from './ColouredLine';
 import { SignatureCalligraphy } from './SignatureCalligraphy';
 import { Construction } from '../pages/Construction';
 
-import { Grid } from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 export const Menu = props => {
     return (
@@ -20,7 +21,13 @@ export const Menu = props => {
                     justify="center"
                     spacing={3}
                 >
-                    <SignatureCalligraphy size="15rem" />
+                    <Button
+                        component={Link}
+                        to="/"
+                        onClick={console.log('CLICK')}
+                    >
+                        <SignatureCalligraphy size="15rem" />
+                    </Button>
                     <ColouredLine color="black" />
                     {/* <NavMenu
                         items={['About', 'Projects', 'Resume', 'Contact']}

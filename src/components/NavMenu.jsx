@@ -26,9 +26,9 @@ export const NavMenu = props => {
                 />
                 <MenuItem
                     key={2}
-                    item="CV"
+                    item="Resumé"
                     onClick={console.log('Clicked an item')}
-                    location="/cv"
+                    location="/resume"
                 />
                 <MenuItem
                     key={3}

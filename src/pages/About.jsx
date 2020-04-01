@@ -1,5 +1,4 @@
 import React from 'react';
-import { ColouredLine } from '../components/ColouredLine';
 import { Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({

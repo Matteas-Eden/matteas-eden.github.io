@@ -8,11 +8,15 @@
 }
 
 .menu {
-    width: 15rem;
+    // width: 15rem;
+    width: 17vw;
+    height: 90vh;
 }
 
 .content {
-    width: 60rem;
+    // width: 60rem;
+    width: 75vw;
+    height: 90vh;
 }
 
 .display-content {
@@ -26,7 +30,9 @@
     padding-bottom: 2rem;
     padding-left: -50px;
     width: 11rem;
-    height: 15rem;
+    // height: 15rem;
+    // width: 5vw;
+    // height: 90vh;
 }
 
 .main {
@@ -95,7 +101,7 @@
     .frosted-glass-content {
         color: white;
         padding: inherit;
-        min-height: 40rem;
+        min-height: 90vh;
         background-color: rgba(255,255,255,0.1);
     }
 }

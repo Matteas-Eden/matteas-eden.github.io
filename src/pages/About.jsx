@@ -1,14 +1,21 @@
 import React from 'react';
 import { ColouredLine } from '../components/ColouredLine';
-import { Typography } from '@material-ui/core';
+import { Typography, makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles({
+    root: {
+        fontFamily: 'high-tower',
+        color: '#000',
+        fontSize: '5vmin',
+    },
+});
 
 export const About = () => {
+    const classes = useStyles();
+
     return (
         <div>
-            <Typography
-                style={{ fontFamily: 'high-tower', color: '#000' }}
-                variant="h4"
-            >
+            <Typography className={classes.root} variant="h4">
                 Hi, I'm Matteas Eden. Welcome to my website.
                 <br />
                 <br />
@@ -25,7 +32,6 @@ export const About = () => {
                 If you'd like to learn more about me, take a look around the
                 website and at the links below.
             </Typography>
-            {/* <ColouredLine color="black" /> */}
         </div>
     );
 };

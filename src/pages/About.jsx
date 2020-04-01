@@ -9,7 +9,7 @@ export const About = () => {
                 style={{ fontFamily: 'high-tower', color: '#000' }}
                 variant="h4"
             >
-                Hello, I'm Matthew 'Matteas' Eden. Welcome to my website.
+                Hi, I'm Matteas Eden. Welcome to my website.
                 <br />
                 <br />
                 At the moment, I'm working through my fourth and final year of a
@@ -25,7 +25,7 @@ export const About = () => {
                 If you'd like to learn more about me, take a look around the
                 website and at the links below.
             </Typography>
-            <ColouredLine color="black" />
+            {/* <ColouredLine color="black" /> */}
         </div>
     );
 };

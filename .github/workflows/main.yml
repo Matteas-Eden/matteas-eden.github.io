@@ -32,5 +32,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.4.2
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        branch: master
+        BRANCH: master
         FOLDER: build

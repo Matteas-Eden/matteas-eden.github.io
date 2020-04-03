@@ -19,35 +19,49 @@ export const Projects = () => {
             <Typography className={classes.root} variant="h3">
                 Never Stop Creating
             </Typography>
-            <Grid container spacing={6} alignItems="center">
-                <Grid item xs={6}>
+            <Grid container spacing={1} alignItems="center">
+                <Grid item xs>
                     <ProjectCard
                         image={pic}
                         title="Title 1"
-                        description="Example description"
+                        description="This is the first example project. It was really fun to make, but quite difficult as well."
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs>
                     <ProjectCard
                         image={pic}
                         title="Title 2"
                         description="Example description"
                     />
                 </Grid>
-                <Grid item xs={6}>
+                {/* <Grid item xs>
                     <ProjectCard
                         image={pic}
                         title="Title 3"
                         description="Example description"
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs>
                     <ProjectCard
                         image={pic}
                         title="Title 4"
                         description="Example description"
                     />
                 </Grid>
+                <Grid item xs>
+                    <ProjectCard
+                        image={pic}
+                        title="Title 5"
+                        description="Example description"
+                    />
+                </Grid>
+                <Grid item xs>
+                    <ProjectCard
+                        image={pic}
+                        title="Title 6"
+                        description="Example description"
+                    />
+                </Grid> */}
             </Grid>
         </div>
     );

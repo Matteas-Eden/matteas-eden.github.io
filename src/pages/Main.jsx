@@ -25,9 +25,9 @@ export const Main = () => {
                     justify="center"
                     spacing={10}
                 >
-                    <Grid item>
+                    {/* <Grid item>
                         <Menu bg={bgImageValue} />
-                    </Grid>
+                    </Grid> */}
                     <Grid item>
                         <Content bg={bgImageValue} />
                     </Grid>

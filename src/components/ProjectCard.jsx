@@ -22,10 +22,10 @@ export const ProjectCard = props => {
                 outline: '1px solid black',
                 // width: '25rem',
                 // height: '6rem',
-                // width: '40vw',
+                width: '100vh',
                 height: '25vh',
                 minHeight: '6rem',
-                minWidth: '30rem',
+                minWidth: '20rem',
             }}
         >
             <Grid
@@ -38,12 +38,16 @@ export const ProjectCard = props => {
                     <div className="project-image" style={{ height: '6rem' }}>
                         <img
                             style={{
-                                margin: '0.5rem',
-                                outline: '1px solid black',
-                                // width: '5rem',
-                                // height: '5rem',
-                                width: '13.5vw',
-                                height: '24vh',
+                                // margin: '0.5rem',
+                                margin: '1vh 1vh 1vh 1vh',
+                                // maring: '1rem 1rem 1rem 1rem',
+                                outline: '0.1vh solid black',
+                                minWidth: '5rem',
+                                minHeight: '5rem',
+                                width: '23vh',
+                                height: '23vh',
+                                maxHeight: '30vh',
+                                maxWidth: '30vh',
                             }}
                             src={TokyoStreet}
                             alt="project"
@@ -65,7 +69,7 @@ export const ProjectCard = props => {
                                 width: '20vw',
                             }}
                         >
-                            <Grid item xs={3}>
+                            {/* <Grid item xs={3}>
                                 <Typography
                                     className={classes.root}
                                     variant="h5"
@@ -94,7 +98,7 @@ export const ProjectCard = props => {
                                     height="0.5em"
                                     width="3em"
                                 />
-                            </Grid>
+                            </Grid> */}
                         </div>
                     </Grid>
                 </Grid>

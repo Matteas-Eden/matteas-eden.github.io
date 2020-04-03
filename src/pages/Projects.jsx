@@ -20,14 +20,14 @@ export const Projects = () => {
                 Never Stop Creating
             </Typography>
             <Grid container spacing={1} alignItems="center">
-                <Grid item xs>
+                <Grid item>
                     <ProjectCard
                         image={pic}
                         title="Title 1"
                         description="This is the first example project. It was really fun to make, but quite difficult as well."
                     />
                 </Grid>
-                <Grid item xs>
+                <Grid item>
                     <ProjectCard
                         image={pic}
                         title="Title 2"

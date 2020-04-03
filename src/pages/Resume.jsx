@@ -9,12 +9,12 @@ const useStyles = makeStyles({
     },
 });
 
-export const Contact = () => {
+export const Resume = () => {
     const classes = useStyles();
 
     return (
         <Typography className={classes.root} variant="h3">
-            Contact
+            Resumé
         </Typography>
     );
 };

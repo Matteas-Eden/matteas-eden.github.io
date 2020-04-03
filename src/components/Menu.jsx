@@ -2,23 +2,13 @@ import React from 'react';
 
 import { NavMenu } from './NavMenu';
 import { FrostedGlassView } from './FrostedGlassView';
-import { LanguageSwitcher } from './LanguageSwitcher';
+import { ColouredLine } from './ColouredLine';
+// import { LanguageSwitcher } from './LanguageSwitcher';
 import { SignatureCalligraphy } from './SignatureCalligraphy';
 import { Construction } from '../pages/Construction';
 
-import { Grid } from '@material-ui/core';
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: '1px',
-            width: '15rem',
-            borderStyle: 'hidden',
-        }}
-    />
-);
+import { Grid, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 export const Menu = props => {
     return (
@@ -31,12 +21,19 @@ export const Menu = props => {
                     justify="center"
                     spacing={3}
                 >
-                    <SignatureCalligraphy size="15rem" />
-                    <ColoredLine color="black" />
-                    <NavMenu
+                    <Button
+                        component={Link}
+                        to="/"
+                        onClick={console.log('CLICK')}
+                    >
+                        <SignatureCalligraphy size="17vw" />
+                    </Button>
+                    <ColouredLine color="black" />
+                    {/* <NavMenu
                         items={['About', 'Projects', 'Resume', 'Contact']}
-                    />
-                    <ColoredLine color="black" />
+                    /> */}
+                    <NavMenu />
+                    <ColouredLine color="black" />
                     <Construction />
                 </Grid>
             </FrostedGlassView>

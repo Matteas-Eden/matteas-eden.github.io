@@ -1,15 +1,22 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { ProjectCard } from '../components/ProjectCard';
 import pic from '../assets/images/TokyoStreet.png';
 
+const useStyles = makeStyles({
+    root: {
+        fontFamily: 'high-tower',
+        color: '#000',
+        fontSize: '10vmin',
+    },
+});
+
 export const Projects = () => {
+    const classes = useStyles();
+
     return (
         <div className="project-page">
-            <Typography
-                style={{ fontFamily: 'high-tower', color: '#000' }}
-                variant="h3"
-            >
+            <Typography className={classes.root} variant="h3">
                 Never Stop Creating
             </Typography>
             <Grid container spacing={6} alignItems="center">

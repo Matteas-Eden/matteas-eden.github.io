@@ -6,7 +6,7 @@ import { FrostedGlassView } from '../components/FrostedGlassView';
 import { Home } from '../pages/Home';
 import { About } from '../pages/About';
 import { Contact } from '../pages/Contact';
-import { CV } from '../pages/CV';
+import { Resume } from '../pages/Resume';
 import { Projects } from '../pages/Projects';
 
 export const Content = props => {
@@ -24,8 +24,8 @@ export const Content = props => {
                         <Route exact path="/projects">
                             <Projects />
                         </Route>
-                        <Route exact path="/cv">
-                            <CV />
+                        <Route exact path="/resume">
+                            <Resume />
                         </Route>
                         <Route exact path="/contact">
                             <Contact />

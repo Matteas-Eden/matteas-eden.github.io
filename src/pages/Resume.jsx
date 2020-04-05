@@ -13,8 +13,17 @@ export const Resume = () => {
     const classes = useStyles();
 
     return (
-        <Typography className={classes.root} variant="h3">
-            Resumé
-        </Typography>
+        <div>
+            <Typography className={classes.root} variant="h3">
+                Resumé
+            </Typography>
+            <Typography
+                className={classes.root}
+                style={{ fontSize: '5vmin' }}
+                variant="h4"
+            >
+                This page is still under construction.
+            </Typography>
+        </div>
     );
 };

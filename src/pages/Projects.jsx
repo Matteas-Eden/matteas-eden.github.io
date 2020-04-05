@@ -13,8 +13,17 @@ export const Projects = () => {
     const classes = useStyles();
 
     return (
-        <Typography className={classes.root} variant="h3">
-            Projects
-        </Typography>
+        <div>
+            <Typography className={classes.root} variant="h3">
+                Projects
+            </Typography>
+            <Typography
+                className={classes.root}
+                style={{ fontSize: '5vmin' }}
+                variant="h4"
+            >
+                This page is still under construction.
+            </Typography>
+        </div>
     );
 };

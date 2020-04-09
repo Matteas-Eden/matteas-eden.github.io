@@ -1,15 +1,27 @@
 import React from 'react';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Typography, makeStyles, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import Icon from '@mdi/react';
 
 const useStyles = makeStyles({
     root: {
         border: '1px solid black',
+        borderRadius: '0',
+        textTransform: 'none',
+        height: '9vh',
     },
     text: {
         fontFamily: 'high-tower',
         color: '#000',
-        fontSize: '2vw',
+        fontSize: '3.5vw',
+        marginTop: '-0.5vh',
+        marginBottom: '-4vh',
+        // marginRight: '-0.5vw',
+        // marginLeft: '-0.25vw',
+    },
+    icon: {
+        marginTop: '0.5vh',
+        marginLeft: '-0.5vw',
     },
 });
 
@@ -19,10 +31,10 @@ export const Label = props => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <Button className={classes.root} href={props.link}>
             <Grid container>
                 {props.img && (
-                    <Grid item>
+                    <Grid item className={classes.icon}>
                         <Icon
                             path={props.img}
                             title="label-icon"
@@ -37,6 +49,6 @@ export const Label = props => {
                     </Typography>
                 </Grid>
             </Grid>
-        </div>
+        </Button>
     );
 };

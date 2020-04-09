@@ -10,6 +10,11 @@ const useStyles = makeStyles({
         color: '#000',
         fontSize: '2vw',
     },
+    label: {
+        height: '10vh',
+        marginLeft: '-1.5vh',
+        marginTop: '0.5vh',
+    },
 });
 
 export const Footer = () => {
@@ -25,29 +30,36 @@ export const Footer = () => {
                 bottom: '5vh',
                 marginLeft: '-1vw',
                 paddingLeft: '1vw',
+                paddingRight: '-1vw',
             }}
         >
             <Grid
                 container
                 direction="row"
-                alignItems="stretch"
+                alignItems="center"
                 justify="flex-start"
-                spacing={1}
+                spacing={2}
             >
-                <Grid item>
-                    <Label text="GitHub Source" img={mdiGithub} />
-                </Grid>
-                <Grid item>
+                <Grid item className={classes.label}>
                     <Label
-                        text="My LinkedIn"
+                        text="Site Source"
+                        img={mdiGithub}
+                        link="https://www.github.com/matteas-eden/matteas-eden.github.io"
+                    />
+                </Grid>
+                <Grid item className={classes.label}>
+                    <Label
+                        text="Visit LinkedIn"
                         img={mdiLinkedin}
+                        link="https://www.linkedin.com/in/matteas-eden"
                         color="#0073b1"
                     />
                 </Grid>
-                <Grid item>
+                <Grid item className={classes.label}>
                     <Label
                         text="Artist Credit"
                         img={mdiDeviantart}
+                        link="https://www.deviantart.com/arsenixc"
                         colour="#05cc47"
                     />
                 </Grid>

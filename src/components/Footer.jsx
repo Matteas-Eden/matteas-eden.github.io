@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { Grid, makeStyles, Typography } from '@material-ui/core';
+import { Label } from './Label';
+import { mdiGithub, mdiLinkedin, mdiDeviantart } from '@mdi/js';
 
 const useStyles = makeStyles({
     root: {
@@ -28,23 +30,26 @@ export const Footer = () => {
             <Grid
                 container
                 direction="row"
-                alignItems="center"
-                justify="center"
+                alignItems="stretch"
+                justify="flex-start"
+                spacing={1}
             >
-                <Grid item xs>
-                    <Typography className={classes.root}>
-                        GitHub Source
-                    </Typography>
+                <Grid item>
+                    <Label text="GitHub Source" img={mdiGithub} />
                 </Grid>
-                <Grid item xs>
-                    <Typography className={classes.root}>
-                        See LinkedIn
-                    </Typography>
+                <Grid item>
+                    <Label
+                        text="My LinkedIn"
+                        img={mdiLinkedin}
+                        color="#0073b1"
+                    />
                 </Grid>
-                <Grid item xs>
-                    <Typography className={classes.root}>
-                        Artist Credit
-                    </Typography>
+                <Grid item>
+                    <Label
+                        text="Artist Credit"
+                        img={mdiDeviantart}
+                        colour="#05cc47"
+                    />
                 </Grid>
             </Grid>
         </div>

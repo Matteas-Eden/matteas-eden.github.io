@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { ProjectCard } from '../components/ProjectCard';
 import pic from '../assets/images/TokyoStreet.png';
-import { mdiReact, mdiSass } from '@mdi/js';
+import { mdiReact, mdiSass, mdiLanguageJava } from '@mdi/js';
 
 const useStyles = makeStyles({
     root: {
@@ -39,6 +39,28 @@ export const Projects = () => {
                                 name: 'Sass',
                                 icon: mdiSass,
                                 colour: '#9e5680',
+                            },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        title="Bakugan Rerolled"
+                        description="Arcade card-battler styled after 2007 anime Bakugan"
+                        image={pic}
+                        labels={[
+                            {
+                                name: 'Java',
+                                icon: mdiLanguageJava,
+                                // colour: '#ed8b00',
+                                // colour: '#d46702',
+                                // colour: 'red',
+                            },
+                            {
+                                name: 'FXGL',
+                            },
+                            {
+                                name: 'Maven',
                             },
                         ]}
                     />

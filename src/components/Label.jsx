@@ -25,20 +25,15 @@ const useStyles = makeStyles({
         borderRadius: '0',
         textTransform: 'none',
         height: '4vh',
-        width: '6vw',
         paddingTop: '2vh',
     },
     smallText: {
         fontFamily: 'high-tower',
         color: '#000',
-        // fontSize: '1vw',
-        // marginTop: '0.5vh',
-        // marginBottom: '-4vh',
     },
     smallIcon: {
-        // border: '1px solid red',
-        // marginTop: '0.1vh',
         marginLeft: '-0.5vw',
+        marginRight: '0.25vw',
     },
 });
 

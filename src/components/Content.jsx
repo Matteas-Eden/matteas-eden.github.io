@@ -9,6 +9,8 @@ import { Contact } from '../pages/Contact';
 import { Resume } from '../pages/Resume';
 import { Projects } from '../pages/Projects';
 
+import { Footer } from '../components/Footer';
+
 export const Content = props => {
     return (
         <div className="content card">
@@ -32,6 +34,7 @@ export const Content = props => {
                         </Route>
                         <Redirect to="/" />
                     </Switch>
+                    <Footer />
                 </div>
             </FrostedGlassView>
         </div>

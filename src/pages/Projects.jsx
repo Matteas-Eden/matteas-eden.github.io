@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { ProjectCard } from '../components/ProjectCard';
 import pic from '../assets/images/TokyoStreet.png';
+import { mdiReact, mdiSass } from '@mdi/js';
 
 const useStyles = makeStyles({
     root: {
@@ -22,46 +23,24 @@ export const Projects = () => {
             <Grid container spacing={1} alignItems="center">
                 <Grid item>
                     <ProjectCard
+                        title="Roll for Reaction"
+                        description="Extension of react-rpg in the style of DnD"
                         image={pic}
-                        title="Title 1"
-                        description="This is the first example project. It was really fun to make, but quite difficult as well."
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
+                            },
+                            {
+                                name: 'Redux',
+                            },
+                            {
+                                name: 'Sass',
+                                icon: mdiSass,
+                            },
+                        ]}
                     />
                 </Grid>
-                <Grid item>
-                    <ProjectCard
-                        image={pic}
-                        title="Title 2"
-                        description="Example description"
-                    />
-                </Grid>
-                {/* <Grid item xs>
-                    <ProjectCard
-                        image={pic}
-                        title="Title 3"
-                        description="Example description"
-                    />
-                </Grid>
-                <Grid item xs>
-                    <ProjectCard
-                        image={pic}
-                        title="Title 4"
-                        description="Example description"
-                    />
-                </Grid>
-                <Grid item xs>
-                    <ProjectCard
-                        image={pic}
-                        title="Title 5"
-                        description="Example description"
-                    />
-                </Grid>
-                <Grid item xs>
-                    <ProjectCard
-                        image={pic}
-                        title="Title 6"
-                        description="Example description"
-                    />
-                </Grid> */}
             </Grid>
         </div>
     );

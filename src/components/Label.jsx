@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Typography, makeStyles, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import Icon from '@mdi/react';
 
 const useStyles = makeStyles({

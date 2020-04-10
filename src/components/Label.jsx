@@ -1,10 +1,9 @@
 import React from 'react';
 import { Grid, Typography, makeStyles, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import Icon from '@mdi/react';
 
 const useStyles = makeStyles({
-    root: {
+    button: {
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
@@ -16,11 +15,29 @@ const useStyles = makeStyles({
         fontSize: '3.5vw',
         marginTop: '-0.5vh',
         marginBottom: '-4vh',
-        // marginRight: '-0.5vw',
-        // marginLeft: '-0.25vw',
     },
     icon: {
         marginTop: '0.5vh',
+        marginLeft: '-0.5vw',
+    },
+    smallButton: {
+        border: '1px solid black',
+        borderRadius: '0',
+        textTransform: 'none',
+        height: '4vh',
+        width: '6vw',
+        paddingTop: '2vh',
+    },
+    smallText: {
+        fontFamily: 'high-tower',
+        color: '#000',
+        // fontSize: '1vw',
+        // marginTop: '0.5vh',
+        // marginBottom: '-4vh',
+    },
+    smallIcon: {
+        // border: '1px solid red',
+        // marginTop: '0.1vh',
         marginLeft: '-0.5vw',
     },
 });
@@ -31,20 +48,40 @@ export const Label = props => {
     const classes = useStyles();
 
     return (
-        <Button className={classes.root} href={props.link}>
+        <Button
+            className={props.small ? classes.smallButton : classes.button}
+            href={'' || props.link}
+        >
             <Grid container>
                 {props.img && (
-                    <Grid item className={classes.icon}>
+                    <Grid
+                        item
+                        className={
+                            props.small ? classes.smallIcon : classes.icon
+                        }
+                    >
                         <Icon
                             path={props.img}
                             title="label-icon"
                             color={props.colour || props.color || 'black'}
-                            size={'7vh'}
+                            size={props.small ? '3vh' : '7vh'}
                         />
                     </Grid>
                 )}
                 <Grid item>
-                    <Typography className={classes.text}>
+                    <Typography
+                        className={
+                            props.small ? classes.smallText : classes.text
+                        }
+                        style={
+                            props.img
+                                ? {}
+                                : {
+                                      marginTop: '-1vh',
+                                      //   border: '2px solid green',
+                                  }
+                        }
+                    >
                         {props.text}
                     </Typography>
                 </Grid>

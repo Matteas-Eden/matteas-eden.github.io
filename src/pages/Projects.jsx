@@ -30,6 +30,7 @@ export const Projects = () => {
                             {
                                 name: 'React',
                                 icon: mdiReact,
+                                colour: '#61dbfb',
                             },
                             {
                                 name: 'Redux',
@@ -37,6 +38,7 @@ export const Projects = () => {
                             {
                                 name: 'Sass',
                                 icon: mdiSass,
+                                colour: '#9e5680',
                             },
                         ]}
                     />

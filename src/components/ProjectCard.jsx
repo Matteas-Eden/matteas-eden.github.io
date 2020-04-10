@@ -30,7 +30,7 @@ const useStyles = makeStyles({
         height: '6vh',
         width: '30vw',
         color: '#000',
-        marginTop: '-1.5vh',
+        marginTop: '-6vh',
     },
     description: {
         // border: '1px solid red',
@@ -40,12 +40,23 @@ const useStyles = makeStyles({
         height: '7vh',
         width: '30vw',
     },
-    labels: {
+    techLabels: {
         position: 'absolute',
         bottom: '-3.5vh',
-        border: '1px solid blue',
+        // border: '1px solid blue',
         height: '4vh',
         width: '30vw',
+        marginTop: '-3vh',
+    },
+    label: {
+        // position: 'absolute',
+        // top: '0',
+        // left: '0',
+        // right: '0',
+        // bottom: '1vh',
+        height: '4vh',
+        marginTop: '-1vh',
+        marginRight: '1vh',
     },
 });
 
@@ -87,13 +98,24 @@ export const ProjectCard = props => {
                         {props.description}
                     </Typography>
                 </Grid>
-                <Grid item xs container>
-                    <div className={classes.labels} />
-                    {/* {props.labels.map(label => (
-                        <Grid item>
-                            <Label img={label.icon} text={label.name} />
+                <Grid
+                    className={classes.techLabels}
+                    item
+                    container
+                    direction="row"
+                    alignItems="flex-start"
+                >
+                    {/* <div className={classes.labels} /> */}
+                    {props.labels.map(label => (
+                        <Grid item className={classes.label}>
+                            <Label
+                                small
+                                img={label.icon}
+                                text={label.name}
+                                colour={label.colour}
+                            />
                         </Grid>
-                    ))} */}
+                    ))}
                 </Grid>
             </Grid>
         </Grid>

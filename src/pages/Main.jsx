@@ -22,8 +22,7 @@ export const Main = () => {
                     container
                     direction="row"
                     alignItems="center"
-                    justify="center"
-                    spacing={10}
+                    justify="space-around"
                 >
                     <Grid item>
                         <Menu bg={bgImageValue} />

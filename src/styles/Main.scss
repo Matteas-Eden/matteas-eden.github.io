@@ -1,15 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .card {
     outline: 2px solid black;
 }
 
 .menu {
-    // width: 15rem;
-    width: 17vw;
+    position: relative;
+    width: 20vw;
     height: 90vh;
 }
 
@@ -25,11 +20,11 @@
 }
 
 .nav-menu {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    padding-left: -50px;
-    // width: 11rem;
-    width: 12vw;
+    position: absolute;
+    left: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 20vw;
 }
 
 .main {

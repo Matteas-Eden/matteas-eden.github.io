@@ -26,6 +26,13 @@ const useStyles = makeStyles({
 
 //  className={`{props.className}``_text`}
 
+/**
+ * Props:
+ * * text - Text on label
+ * * link - Link for label on click
+ * * img - Icon for label (optional)
+ * * colour/color - Colour of icon (optional, defaults to black)
+ */
 export const Label = props => {
     const classes = useStyles();
 

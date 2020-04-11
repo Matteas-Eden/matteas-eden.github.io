@@ -16,3 +16,4 @@ like to implement all of them.
 ### Future Work
 - Background that changes depending on time of day
 - Animations between each page (sliding)
+- Language switch that provides support for Japanese

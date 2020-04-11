@@ -25,12 +25,12 @@ jobs:
     - name: Install and build
       run: |
         yarn install --frozen-lockfile
-        yarn build        
+        CI=false yarn build        
 
     # Deployment
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.4.2
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        branch: master
+        BRANCH: master
         FOLDER: build

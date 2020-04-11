@@ -6,10 +6,10 @@ export const Construction = () => {
         <div className="construction">
             <Grid>
                 <Typography
-                    variant="h6"
+                    variant="h5"
                     style={{
-                        paddingLeft: '1em',
-                        fontFamily: 'garamond',
+                        marginLeft: '1vh',
+                        fontFamily: 'high-tower',
                         color: '#000',
                     }}
                 >

@@ -15,10 +15,12 @@ const useStyles = makeStyles({
         fontSize: '10vmin',
     },
     image: {
-        position: 'absolute',
-        right: '1vh',
+        position: 'fixed',
+        right: '4vh',
         border: '1px solid black',
-        height: '75vh',
+        height: '77vh',
+        marginRight: '-1vh',
+        marginTop: '-1vh',
     },
 });
 
@@ -35,17 +37,19 @@ export const Resume = () => {
             >
                 <Grid item>
                     <Typography className={classes.text} variant="h3">
-                        Resumé
+                        Looking to hire?
                     </Typography>
-                    {/* <Typography
+                    <Typography
                         className={classes.text}
-                        style={{ fontSize: '5vmin' }}
+                        style={{ fontSize: '5vmin', width: '75vh' }}
                         variant="h4"
                     >
-                        This page is still under construction.
-                    </Typography> */}
+                        Feel free to look over my experience, education and
+                        skillset.
+                    </Typography>
+                    <br />
                     <Label
-                        text="Download"
+                        text="Download PDF"
                         link={ResumeFile}
                         img={mdiDownload}
                     />

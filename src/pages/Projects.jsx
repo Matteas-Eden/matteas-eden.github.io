@@ -3,6 +3,8 @@ import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { ProjectCard } from '../components/ProjectCard';
 import pic from '../assets/images/TokyoStreet.png';
 import { mdiReact, mdiSass, mdiLanguageJava } from '@mdi/js';
+import BakuganRerolledLogo from '../assets/project-logos/bakugan-rerolled.png';
+import RollForReactionLogo from '../assets/project-logos/roll-for-reaction.png';
 
 const useStyles = makeStyles({
     root: {
@@ -25,7 +27,7 @@ export const Projects = () => {
                     <ProjectCard
                         title="Roll for Reaction"
                         description="Extension of react-rpg in the style of DnD"
-                        image={pic}
+                        image={RollForReactionLogo}
                         labels={[
                             {
                                 name: 'React',
@@ -47,7 +49,7 @@ export const Projects = () => {
                     <ProjectCard
                         title="Bakugan Rerolled"
                         description="Arcade card-battler styled after 2007 anime Bakugan"
-                        image={pic}
+                        image={BakuganRerolledLogo}
                         labels={[
                             {
                                 name: 'Java',

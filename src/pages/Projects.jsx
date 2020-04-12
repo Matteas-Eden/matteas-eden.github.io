@@ -1,10 +1,13 @@
 import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { ProjectCard } from '../components/ProjectCard';
-import pic from '../assets/images/TokyoStreet.png';
-import { mdiReact, mdiSass, mdiLanguageJava } from '@mdi/js';
+
+import { mdiReact, mdiSass, mdiLanguageJava, mdiMaterialUi } from '@mdi/js';
+
 import BakuganRerolledLogo from '../assets/project-logos/bakugan-rerolled.png';
 import RollForReactionLogo from '../assets/project-logos/roll-for-reaction.png';
+import SiteLogo from '../assets/project-logos/site-logo.png';
+import FeedrLogo from '../assets/project-logos/feedr.png';
 
 const useStyles = makeStyles({
     root: {
@@ -63,6 +66,73 @@ export const Projects = () => {
                             },
                             {
                                 name: 'Maven',
+                            },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        title="Portfolio Website"
+                        description="A custom website with a unique look to showcase myself"
+                        image={SiteLogo}
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
+                                colour: '#61dbfb',
+                            },
+                            {
+                                name: 'Sass',
+                                icon: mdiSass,
+                                colour: '#9e5680',
+                            },
+                            {
+                                name: 'Material UI',
+                                icon: mdiMaterialUi,
+                                colour: '#61dbfb',
+                            },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        title="Feedr"
+                        description="A simple and elegant media feed aggregrator"
+                        image={FeedrLogo}
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
+                                colour: '#61dbfb',
+                            },
+                            {
+                                name: 'Material UI',
+                                icon: mdiMaterialUi,
+                                colour: '#61dbfb',
+                            },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        title="Dice Roller"
+                        description="Interactive 3D dice roller"
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        title="Doto"
+                        description="A to-do list webapp that integrates with Google accounts"
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
+                                colour: '#61dbfb',
+                            },
+                            {
+                                name: 'Material UI',
+                                icon: mdiMaterialUi,
+                                colour: '#61dbfb',
                             },
                         ]}
                     />

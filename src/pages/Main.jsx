@@ -5,7 +5,7 @@ import { Grid } from '@material-ui/core';
 import { Menu } from '../components/Menu';
 import { Content } from '../components/Content';
 
-import bgImage from '../assets/images/clay-banks-bg.jpg';
+import bgImage from '../assets/images/TokyoStreet.png';
 
 import '../styles/Main.scss';
 
@@ -22,8 +22,7 @@ export const Main = () => {
                     container
                     direction="row"
                     alignItems="center"
-                    justify="center"
-                    spacing={10}
+                    justify="space-around"
                 >
                     {/* <Grid item>
                         <Menu bg={bgImageValue} />

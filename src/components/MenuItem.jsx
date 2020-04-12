@@ -10,13 +10,12 @@ export const MenuItem = props => {
             }}
             style={{
                 textTransform: 'none',
-                height: '4rem',
-                marginRight: '3em',
+                height: '11vh',
             }}
             component={Link}
             to={props.location}
         >
-            <Typography style={{ fontFamily: 'high-tower', fontSize: '4rem' }}>
+            <Typography style={{ fontFamily: 'high-tower', fontSize: '11vh' }}>
                 {props.item}
             </Typography>
         </Button>

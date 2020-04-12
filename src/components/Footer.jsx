@@ -14,7 +14,7 @@ const useStyles = makeStyles({
         height: '10vh',
         marginLeft: '-0.5vw',
         marginTop: '0.5vh',
-        marginRight: '1vw',
+        marginRight: '0.75vw',
     },
 });
 

@@ -70,11 +70,13 @@ export const ProjectCard = props => {
             justify="flex-start"
         >
             <Grid item>
-                <img
-                    className={classes.image}
-                    src={props.image}
-                    alt="project-logo"
-                />
+                {props.image && (
+                    <img
+                        className={classes.image}
+                        src={props.image}
+                        alt="project-logo"
+                    />
+                )}
             </Grid>
             <Grid
                 item

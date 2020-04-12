@@ -6,54 +6,52 @@ import { Label } from './Label';
 const useStyles = makeStyles({
     card: {
         border: '1px solid black',
-        height: '25vh',
-        width: '50vw',
+        height: '20vh',
+        width: '35vw',
     },
     image: {
         border: '1px solid black',
         margin: '0.5vh 0vh 0vh 0.5vh',
-        height: '23vh',
-        width: '23vh',
+        height: '18vh',
+        width: '18vh',
     },
     info: {
         position: 'relative',
         // border: '1px solid green',
-        height: '20vh',
-        width: '35vw',
-        marginTop: '-4vh',
+        height: '18vh',
+        width: '22.5vw',
         marginLeft: '1vh',
     },
     title: {
+        position: 'absolute',
+        top: '-1.5vh',
         // border: '1px solid purple',
         fontFamily: 'high-tower',
-        fontSize: '3vw',
-        height: '6vh',
-        width: '30vw',
+        fontSize: '2.5vw',
+        height: '5vh',
+        width: '22.5vw',
         color: '#000',
-        marginTop: '-6vh',
     },
     description: {
+        position: 'absolute',
+        top: '5vh',
         // border: '1px solid red',
         fontFamily: 'high-tower',
-        fontSize: '2vw',
+        fontSize: '1.5vw',
+        lineHeight: '100%',
         color: '#000',
-        height: '7vh',
-        width: '30vw',
+        height: '5vh',
+        width: '22.5vw',
     },
     techLabels: {
         position: 'absolute',
-        bottom: '-3.5vh',
+        bottom: '0',
         // border: '1px solid blue',
         height: '4vh',
-        width: '30vw',
+        width: '22.5vw',
         marginTop: '-3vh',
     },
     label: {
-        // position: 'absolute',
-        // top: '0',
-        // left: '0',
-        // right: '0',
-        // bottom: '1vh',
         height: '4vh',
         marginTop: '-1vh',
         marginRight: '1vh',
@@ -87,13 +85,11 @@ export const ProjectCard = props => {
                 className={classes.info}
             >
                 <Grid item>
-                    {/* <div className={classes.title} /> */}
                     <Typography className={classes.title}>
                         {props.title}
                     </Typography>
                 </Grid>
                 <Grid item>
-                    {/* <div className={classes.description} /> */}
                     <Typography className={classes.description}>
                         {props.description}
                     </Typography>
@@ -105,17 +101,17 @@ export const ProjectCard = props => {
                     direction="row"
                     alignItems="flex-start"
                 >
-                    {/* <div className={classes.labels} /> */}
-                    {props.labels.map(label => (
-                        <Grid item className={classes.label}>
-                            <Label
-                                small
-                                img={label.icon}
-                                text={label.name}
-                                colour={label.colour}
-                            />
-                        </Grid>
-                    ))}
+                    {props.labels &&
+                        props.labels.map(label => (
+                            <Grid item className={classes.label}>
+                                <Label
+                                    small
+                                    img={label.icon}
+                                    text={label.name}
+                                    colour={label.colour}
+                                />
+                            </Grid>
+                        ))}
                 </Grid>
             </Grid>
         </Grid>

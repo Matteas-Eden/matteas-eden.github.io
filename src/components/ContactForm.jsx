@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     input: {
         background: 'none',
         border: '1px solid black',
-        fontSize: '1vw',
+        fontSize: '2.5vmin',
         color: '#101010',
         height: '3vh',
         width: '45vw',
@@ -35,16 +35,16 @@ const useStyles = makeStyles({
     textarea: {
         background: 'none',
         border: '1px solid black',
-        fontSize: '1vw',
+        fontSize: '2.5vmin',
         color: '#101010',
         resize: 'none',
-        height: '15vh',
+        height: '21vh',
         width: '45vw',
     },
 });
 
-export const ContactForm = () => {
-    const classes = useStyles();
+export const ContactForm = props => {
+    const classes = useStyles(props);
 
     return (
         <form

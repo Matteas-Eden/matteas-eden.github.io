@@ -18,7 +18,7 @@ export const Content = props => {
                 <div className="display-content">
                     <Switch>
                         <Route exact path="/">
-                            <Home />
+                            <Projects />
                         </Route>
                         <Route exact path="/about">
                             <About />

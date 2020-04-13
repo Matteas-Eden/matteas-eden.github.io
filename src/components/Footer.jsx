@@ -12,8 +12,9 @@ const useStyles = makeStyles({
     },
     label: {
         height: '10vh',
-        marginLeft: '-1.5vh',
+        marginLeft: '-0.5vw',
         marginTop: '0.5vh',
+        marginRight: '0.75vw',
     },
 });
 
@@ -38,7 +39,6 @@ export const Footer = () => {
                 direction="row"
                 alignItems="center"
                 justify="flex-start"
-                spacing={2}
             >
                 <Grid item className={classes.label}>
                     <Label

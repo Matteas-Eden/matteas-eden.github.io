@@ -13,14 +13,16 @@ const useStyles = makeStyles({
     },
 });
 
-export const Contact = () => {
+export const Contact = props => {
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
-            <Typography className={classes.text} variant="h3">
-                Get in touch!
-            </Typography>
+            {!props.mobile && (
+                <Typography className={classes.text} variant="h3">
+                    Get in touch!
+                </Typography>
+            )}
             <Typography
                 className={classes.text}
                 style={{ fontSize: '5vmin' }}

@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const Resume = () => {
+export const Resume = props => {
     const classes = useStyles();
 
     return (
@@ -37,9 +37,11 @@ export const Resume = () => {
                 justify="flex-start"
             >
                 <Grid item>
-                    <Typography className={classes.text} variant="h3">
-                        Looking to hire?
-                    </Typography>
+                    {!props.mobile && (
+                        <Typography className={classes.text} variant="h3">
+                            Looking to hire?
+                        </Typography>
+                    )}
                     <Typography
                         className={classes.text}
                         style={{ fontSize: '5vmin', width: '75vh' }}

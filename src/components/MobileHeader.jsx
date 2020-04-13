@@ -1,73 +1,41 @@
-import { React, Component } from 'react';
-import {
-    withStyles,
-    AppBar,
-    Toolbar,
-    IconButton,
-    Typography,
-    Button,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
-import { Twirl as Hamburger } from 'hamburger-react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { AppBar, Select } from '@material-ui/core';
 
-const styles = {
-    text: {
-        fontFamily: 'high-tower',
-        fontSize: '3vw',
-        color: '#000',
-    },
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: '2vw',
-    },
-    title: {
-        flexGrow: 1,
-    },
-    appbar: {
-        shadows: 'none',
-        border: '2px solid green',
-        color: '#000',
-        height: '7.5vh',
-        width: '95vw',
-        // marginRight: '-10vh',
-        // padding: '0',
-    },
-};
-
-class MobileHeader extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { istOpen: false, headerTitle: this.props.title };
-    }
-
-    render() {
-        const { classes } = this.props;
-        return (
-            <AppBar
-                className={classes.appbar}
-                position="static"
-                color="transparent"
+export const MobileHeader = props => {
+    let history = useHistory();
+    return (
+        <AppBar
+            position="static"
+            color="transparent"
+            style={{
+                position: 'absolute',
+                top: '0',
+                borderBottom: '1px solid black',
+                shadows: 'none',
+                height: '4vh',
+                width: '110%',
+            }}
+        >
+            <Select
+                native
+                autoWidth
+                defaultValue="Home"
+                style={{ height: '4vh' }}
+                onChange={event => {
+                    let item = event.target.value;
+                    console.log(history);
+                    if (item === 'Home') history.push('/');
+                    else if (item === 'Resumé') history.push('/resume');
+                    else history.push('/' + item.toLowerCase());
+                }}
             >
-                <Toolbar>
-                    <Typography variant="h6" className={classes.title}>
-                        Home
-                    </Typography>
-                    <IconButton
-                        // edge="end"
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="menu"
-                        disableRipple
-                    >
-                        <Hamburger direction="left" />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-        );
-    }
-}
-
-export default withStyles(styles)(MobileHeader);
+                {['Home', 'About', 'Projects', 'Resumé', 'Contact'].map(
+                    page => (
+                        <option>{page}</option>
+                    )
+                )}
+            </Select>
+        </AppBar>
+    );
+};

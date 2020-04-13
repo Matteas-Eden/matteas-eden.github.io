@@ -12,7 +12,7 @@ import '../styles/Main.scss';
 
 export const Main = () => {
     const bgImageValue = `url(${bgImage})`;
-    const isMobile = useMediaQuery('(max-aspect-ratio: 7/9)');
+    const isMobile = useMediaQuery('(max-aspect-ratio: 1000/600)');
 
     return (
         <Router>

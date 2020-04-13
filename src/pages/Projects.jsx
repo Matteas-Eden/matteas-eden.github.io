@@ -2,12 +2,11 @@ import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { ProjectCard } from '../components/ProjectCard';
 
-import { mdiReact, mdiSass, mdiLanguageJava, mdiMaterialUi } from '@mdi/js';
+import { mdiReact, mdiSass, mdiLanguageJava } from '@mdi/js';
 
 import BakuganRerolledLogo from '../assets/project-logos/bakugan-rerolled.png';
 import RollForReactionLogo from '../assets/project-logos/roll-for-reaction.png';
 import SiteLogo from '../assets/project-logos/site-logo.png';
-import FeedrLogo from '../assets/project-logos/feedr.png';
 import OuterstellarLogo from '../assets/project-logos/outerstellar.png';
 import EnergizeLogo from '../assets/project-logos/energize.png';
 

@@ -25,13 +25,15 @@ export const Home = () => {
                 className={clsx(classes.root, classes.english)}
                 variant="h3"
             >
-                Hi, I'm Matteas Eden. This is my website.
+                Hi, I'm Matteas Eden.
                 <br />
-                It's still under construction at the moment, but make sure to
-                watch this space.
                 <br />
+                Welcome to my little corner of the internet. You can use the
+                links on the left to read about me, see some of the cool
+                projects I've been involved with or even take a look at my
+                Resumé if you're an employer and looking to hire.
             </Typography>
-            <Typography
+            {/* <Typography
                 className={clsx(classes.root, classes.japanese)}
                 variant="h3"
             >
@@ -39,7 +41,7 @@ export const Home = () => {
                 こんにちは、イーデン・マテアスです。私のサイトへようこそ。
                 <br />
                 現在まだ工事中だけど、きっとこのスペースを見続けてください！
-            </Typography>
+            </Typography> */}
         </div>
     );
 };

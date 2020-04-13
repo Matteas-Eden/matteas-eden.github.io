@@ -8,7 +8,12 @@ export const FrostedGlassView = props => {
                 'bg frosted-glass ' + (props.className ? props.className : '')
             }
         >
-            <div className="frosted-glass-content">{props.children}</div>
+            <div
+                className="frosted-glass-content"
+                style={props.mobile ? { minHeight: '95vh' } : {}}
+            >
+                {props.children}
+            </div>
         </div>
     );
 };

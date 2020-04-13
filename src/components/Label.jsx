@@ -4,6 +4,7 @@ import Icon from '@mdi/react';
 
 const useStyles = makeStyles({
     button: {
+        position: 'relative',
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
@@ -12,12 +13,10 @@ const useStyles = makeStyles({
     text: {
         fontFamily: 'high-tower',
         color: '#000',
-        fontSize: '3.5vw',
-        marginTop: '-0.5vh',
-        marginBottom: '-4vh',
+        fontSize: '3.25vw',
     },
     icon: {
-        marginTop: '0.5vh',
+        // marginTop: '0.75vh',
         marginLeft: '-0.5vw',
     },
     smallButton: {

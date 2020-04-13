@@ -3,24 +3,27 @@ import { Grid, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     form: {
+        position: 'relative',
         border: '1px solid black',
-        // width: '50vw',
-        height: '50vh',
+        width: '50vw',
+        height: '52.5vh',
     },
     inner: {
         border: 'none',
+        marginLeft: '1vw',
+        marginTop: '1vh',
     },
     label: {
         fontFamily: 'high-tower',
         fontSize: '1.5vw',
         color: '#000',
-        marginLeft: '1vw',
     },
     button: {
         background: 'none',
         border: '1px solid black',
         fontFamily: 'high-tower',
-        fontSize: '3.5vw',
+        fontSize: '3vw',
+        height: '7vh',
         color: '#000',
         marginLeft: '1vw',
         marginTop: '1vh',
@@ -30,14 +33,14 @@ const useStyles = makeStyles({
         background: 'none',
         border: '1px solid black',
         color: '#101010',
-        marginLeft: '1vw',
+        width: '45vw',
     },
     textarea: {
         background: 'none',
         border: '1px solid black',
         color: '#101010',
         resize: 'none',
-        marginLeft: '1vw',
+        width: '45vw',
     },
 });
 
@@ -53,12 +56,7 @@ export const ContactForm = () => {
             className={classes.form}
         >
             <fieldset className={classes.inner}>
-                <Grid
-                    container
-                    direction="column"
-                    alignItems="flex-start"
-                    justify="flex-start"
-                >
+                <Grid container>
                     <Grid
                         item
                         container
@@ -97,14 +95,6 @@ export const ContactForm = () => {
                                 required=""
                             />
                         </Grid>
-                    </Grid>
-                    <Grid
-                        item
-                        container
-                        direction="column"
-                        alignItems="flex-start"
-                        justify="center"
-                    >
                         <Grid item>
                             <label className={classes.label} for="message">
                                 Your Message

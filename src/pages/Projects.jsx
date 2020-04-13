@@ -19,14 +19,16 @@ const useStyles = makeStyles({
     },
 });
 
-export const Projects = () => {
+export const Projects = props => {
     const classes = useStyles();
 
     return (
         <div className="project-page">
-            <Typography className={classes.root} variant="h3">
-                Never Stop Creating
-            </Typography>
+            {!props.mobile && (
+                <Typography className={classes.root} variant="h3">
+                    Never Stop Creating
+                </Typography>
+            )}
             <Grid container spacing={1} alignItems="center">
                 <Grid item>
                     <ProjectCard

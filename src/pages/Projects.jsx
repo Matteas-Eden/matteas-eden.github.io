@@ -57,9 +57,7 @@ export const Projects = () => {
                             {
                                 name: 'Java',
                                 icon: mdiLanguageJava,
-                                // colour: '#ed8b00',
-                                // colour: '#d46702',
-                                // colour: 'red',
+                                colour: 'red',
                             },
                             {
                                 name: 'FXGL',
@@ -115,8 +113,20 @@ export const Projects = () => {
                 </Grid>
                 <Grid item>
                     <ProjectCard
-                        title="Dice Roller"
-                        description="Interactive 3D dice roller"
+                        title="Energize"
+                        description="A side-scrolling action adventure game with LAN multiplayer"
+                        labels={[
+                            {
+                                name: 'Java',
+                                icon: mdiLanguageJava,
+                                colour: 'red',
+                            },
+                            {
+                                name: 'JavaFX',
+                                icon: mdiLanguageJava,
+                                colour: 'red',
+                            },
+                        ]}
                     />
                 </Grid>
                 <Grid item>

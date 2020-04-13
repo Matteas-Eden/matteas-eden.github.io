@@ -19,7 +19,7 @@ const useStyles = makeStyles({
         position: 'relative',
         // border: '1px solid green',
         height: '18vh',
-        width: '22.5vw',
+        width: '24vw',
         marginLeft: '1vh',
     },
     title: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles({
         bottom: '0',
         // border: '1px solid blue',
         height: '4vh',
-        width: '22.5vw',
+        width: '24vw',
         marginTop: '-3vh',
     },
     label: {

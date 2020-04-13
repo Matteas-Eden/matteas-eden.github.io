@@ -16,7 +16,6 @@ const useStyles = makeStyles({
         fontSize: '3.25vw',
     },
     icon: {
-        // marginTop: '0.75vh',
         marginLeft: '-0.5vw',
     },
     smallButton: {
@@ -24,15 +23,16 @@ const useStyles = makeStyles({
         borderRadius: '0',
         textTransform: 'none',
         height: '4vh',
+        minWidth: '10vmin',
         paddingTop: '2vh',
     },
     smallText: {
         fontFamily: 'high-tower',
         color: '#000',
+        fontSize: '3vmin',
     },
     smallIcon: {
-        marginLeft: '-0.5vw',
-        marginRight: '0.25vw',
+        marginLeft: '-1vmin',
     },
 });
 
@@ -53,7 +53,12 @@ export const Label = props => {
             className={props.small ? classes.smallButton : classes.button}
             href={'' || props.link}
         >
-            <Grid container>
+            <Grid
+                container
+                direction="row"
+                alignItems="center"
+                justify="space-evenly"
+            >
                 {props.img && (
                     <Grid
                         item
@@ -65,7 +70,7 @@ export const Label = props => {
                             path={props.img}
                             title="label-icon"
                             color={props.colour || props.color || 'black'}
-                            size={props.small ? '3vh' : '7vh'}
+                            size={props.small ? '3vmin' : '7vmin'}
                         />
                     </Grid>
                 )}
@@ -75,10 +80,10 @@ export const Label = props => {
                             props.small ? classes.smallText : classes.text
                         }
                         style={
-                            props.img
+                            !props.img && !props.small
                                 ? {}
                                 : {
-                                      marginTop: '-1vh',
+                                      marginTop: '-0.5vmin',
                                       //   border: '2px solid green',
                                   }
                         }

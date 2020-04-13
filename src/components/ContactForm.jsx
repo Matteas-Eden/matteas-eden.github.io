@@ -10,8 +10,6 @@ const useStyles = makeStyles({
     },
     inner: {
         border: 'none',
-        marginLeft: '1vw',
-        marginTop: '1vh',
     },
     label: {
         fontFamily: 'high-tower',
@@ -32,14 +30,18 @@ const useStyles = makeStyles({
     input: {
         background: 'none',
         border: '1px solid black',
+        fontSize: '1vw',
         color: '#101010',
+        height: '3vh',
         width: '45vw',
     },
     textarea: {
         background: 'none',
         border: '1px solid black',
+        fontSize: '1vw',
         color: '#101010',
         resize: 'none',
+        height: '15vh',
         width: '45vw',
     },
 });
@@ -118,7 +120,13 @@ export const ContactForm = () => {
                     />
                 </Grid>
             </fieldset>
-            <input className={classes.button} type="submit" value="Submit" />
+            <center>
+                <input
+                    className={classes.button}
+                    type="submit"
+                    value="Submit"
+                />
+            </center>
         </form>
     );
 };

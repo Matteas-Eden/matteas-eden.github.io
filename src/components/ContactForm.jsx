@@ -1,35 +1,43 @@
 import React from 'react';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     form: {
         border: '1px solid black',
+        // width: '50vw',
+        height: '50vh',
     },
     inner: {
         border: 'none',
     },
     label: {
         fontFamily: 'high-tower',
-        fontSize: '2vw',
+        fontSize: '1.5vw',
         color: '#000',
+        marginLeft: '1vw',
     },
     button: {
         background: 'none',
         border: '1px solid black',
         fontFamily: 'high-tower',
-        fontSize: '5vw',
+        fontSize: '3.5vw',
         color: '#000',
+        marginLeft: '1vw',
+        marginTop: '1vh',
+        marginBottom: '1vh',
     },
     input: {
         background: 'none',
         border: '1px solid black',
         color: '#101010',
+        marginLeft: '1vw',
     },
     textarea: {
         background: 'none',
         border: '1px solid black',
         color: '#101010',
         resize: 'none',
+        marginLeft: '1vw',
     },
 });
 
@@ -44,104 +52,83 @@ export const ContactForm = () => {
             method="post"
             className={classes.form}
         >
-            <Grid
-                container
-                direction="column"
-                alignItems="flex-start"
-                justify="space-around"
-            >
-                <Grid item>
-                    <fieldset className={classes.inner}>
-                        <Grid
-                            item
-                            container
-                            direction="row"
-                            alignItems="flex-start"
-                            justify="center"
-                            spacing={1}
-                        >
-                            <Grid item>
-                                <label
-                                    className={classes.label}
-                                    for="full-name"
-                                >
-                                    Your Name:
-                                </label>
-                            </Grid>
-                            <Grid item>
-                                <input
-                                    className={classes.input}
-                                    type="text"
-                                    name="name"
-                                    placeholder="First and Last"
-                                    required=""
-                                />
-                            </Grid>
+            <fieldset className={classes.inner}>
+                <Grid
+                    container
+                    direction="column"
+                    alignItems="flex-start"
+                    justify="flex-start"
+                >
+                    <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="flex-start"
+                        justify="center"
+                    >
+                        <Grid item>
+                            <label className={classes.label} for="full-name">
+                                Name
+                            </label>
                         </Grid>
-                        <Grid
-                            item
-                            container
-                            direction="row"
-                            alignItems="flex-start"
-                            justify="center"
-                            spacing={1}
-                        >
-                            <Grid item>
-                                <label
-                                    className={classes.label}
-                                    for="email-address"
-                                >
-                                    Your Email Address:
-                                </label>
-                            </Grid>
-                            <Grid item>
-                                <input
-                                    className={classes.input}
-                                    type="email"
-                                    name="_replyto"
-                                    placeholder="email@domain.tld"
-                                    required=""
-                                />
-                            </Grid>
+                        <Grid item>
+                            <input
+                                className={classes.input}
+                                type="text"
+                                name="name"
+                                placeholder="First name Last name"
+                                required=""
+                            />
                         </Grid>
-                        <Grid
-                            item
-                            container
-                            direction="row"
-                            alignItems="flex-start"
-                            justify="center"
-                            spacing={1}
-                        >
-                            <Grid item>
-                                <label className={classes.label} for="message">
-                                    Your Message:
-                                </label>
-                            </Grid>
-                            <Grid item>
-                                <textarea
-                                    className={classes.textarea}
-                                    rows="10"
-                                    name="message"
-                                    placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
-                                    required=""
-                                ></textarea>
-                            </Grid>
+                        <Grid item>
+                            <label
+                                className={classes.label}
+                                for="email-address"
+                            >
+                                Email Address
+                            </label>
                         </Grid>
-                        <input
-                            type="hidden"
-                            name="_subject"
-                            value="Contact Form Submission"
-                        />
-                    </fieldset>
-                </Grid>
-                <Grid item>
+                        <Grid item>
+                            <input
+                                className={classes.input}
+                                type="email"
+                                name="_replyto"
+                                placeholder="email@domain.tld"
+                                required=""
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="flex-start"
+                        justify="center"
+                    >
+                        <Grid item>
+                            <label className={classes.label} for="message">
+                                Your Message
+                            </label>
+                        </Grid>
+                        <Grid item>
+                            <textarea
+                                className={classes.textarea}
+                                rows="6"
+                                cols="50"
+                                name="message"
+                                placeholder="Lorem ipsum dolor sit amet..."
+                                required=""
+                            ></textarea>
+                        </Grid>
+                    </Grid>
                     <input
-                        className={classes.button}
-                        type="submit"
-                        value="Submit"
+                        type="hidden"
+                        name="_subject"
+                        value="Contact Form Submission"
                     />
                 </Grid>
-            </Grid>
+            </fieldset>
+            <input className={classes.button} type="submit" value="Submit" />
         </form>
     );
 };

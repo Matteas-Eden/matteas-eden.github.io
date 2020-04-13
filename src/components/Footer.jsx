@@ -42,14 +42,14 @@ export const Footer = () => {
             >
                 <Grid item className={classes.label}>
                     <Label
-                        text="Site Source"
+                        text="My GitHub"
                         img={mdiGithub}
-                        link="https://www.github.com/matteas-eden/matteas-eden.github.io"
+                        link="https://www.github.com/matteas-eden"
                     />
                 </Grid>
                 <Grid item className={classes.label}>
                     <Label
-                        text="Visit LinkedIn"
+                        text="My LinkedIn"
                         img={mdiLinkedin}
                         link="https://www.linkedin.com/in/matteas-eden"
                         color="#0073b1"

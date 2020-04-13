@@ -20,12 +20,8 @@ const useStyles = makeStyles({
         background: 'none',
         border: '1px solid black',
         fontFamily: 'high-tower',
-        fontSize: '3vw',
-        height: '7vh',
+        fontSize: '5vmin',
         color: '#000',
-        marginLeft: '1vw',
-        marginTop: '1vh',
-        marginBottom: '1vh',
     },
     input: {
         background: 'none',
@@ -34,6 +30,7 @@ const useStyles = makeStyles({
         color: '#101010',
         height: '3vh',
         width: '45vw',
+        marginTop: '-20vmin',
     },
     textarea: {
         background: 'none',
@@ -64,20 +61,20 @@ export const ContactForm = () => {
                         container
                         direction="column"
                         alignItems="flex-start"
-                        justify="center"
+                        justify="space-around"
                     >
                         <Grid item>
                             <label className={classes.label} for="full-name">
                                 Name
                             </label>
-                        </Grid>
-                        <Grid item>
+                            {/* </Grid>
+                        <Grid item> */}
                             <input
                                 className={classes.input}
                                 type="text"
                                 name="name"
                                 placeholder="First name Last name"
-                                required=""
+                                required
                             />
                         </Grid>
                         <Grid item>
@@ -87,29 +84,25 @@ export const ContactForm = () => {
                             >
                                 Email Address
                             </label>
-                        </Grid>
-                        <Grid item>
                             <input
                                 className={classes.input}
                                 type="email"
                                 name="_replyto"
                                 placeholder="email@domain.tld"
-                                required=""
+                                required
                             />
                         </Grid>
                         <Grid item>
                             <label className={classes.label} for="message">
                                 Your Message
                             </label>
-                        </Grid>
-                        <Grid item>
                             <textarea
                                 className={classes.textarea}
                                 rows="6"
                                 cols="50"
                                 name="message"
                                 placeholder="Lorem ipsum dolor sit amet..."
-                                required=""
+                                required
                             ></textarea>
                         </Grid>
                     </Grid>
@@ -120,7 +113,7 @@ export const ContactForm = () => {
                     />
                 </Grid>
             </fieldset>
-            <center>
+            <center style={{ marginTop: '-1vmin' }}>
                 <input
                     className={classes.button}
                     type="submit"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
+import { ContactForm } from '../components/ContactForm';
 
 const useStyles = makeStyles({
     root: {
@@ -25,9 +26,10 @@ export const Contact = () => {
                 style={{ fontSize: '5vmin' }}
                 variant="h4"
             >
-                Feel free to reach out to me via LinkedIn, email or by filling
-                out the form below.
+                Feel free to reach out to me via LinkedIn or send me an email by
+                filling out the form below.
             </Typography>
+            <ContactForm />
         </div>
     );
 };

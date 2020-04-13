@@ -88,11 +88,11 @@ export const Projects = props => {
                                 icon: mdiSass,
                                 colour: '#9e5680',
                             },
-                            {
-                                name: 'Material UI',
-                                icon: mdiMaterialUi,
-                                colour: '#61dbfb',
-                            },
+                            // {
+                            //     name: 'Material UI',
+                            //     icon: mdiMaterialUi,
+                            //     colour: '#1e90ff',
+                            // },
                         ]}
                     />
                 </Grid>

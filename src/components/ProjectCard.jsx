@@ -6,8 +6,7 @@ import { Label } from './Label';
 const useStyles = makeStyles({
     card: {
         border: '1px solid black',
-        height: '20vh',
-        width: '35vw',
+        minWidth: '35vw',
     },
     image: {
         border: '1px solid black',
@@ -29,7 +28,7 @@ const useStyles = makeStyles({
         fontFamily: 'high-tower',
         fontSize: '2.5vw',
         height: '5vh',
-        width: '22.5vw',
+        minWidth: '22.5vw',
         color: '#000',
     },
     description: {
@@ -41,14 +40,14 @@ const useStyles = makeStyles({
         lineHeight: '100%',
         color: '#000',
         height: '5vh',
-        width: '22.5vw',
+        minWidth: '22.5vw',
     },
     techLabels: {
         position: 'absolute',
         bottom: '0',
         // border: '1px solid blue',
         height: '4vh',
-        width: '24vw',
+        minWidth: '24vw',
         marginTop: '-3vh',
     },
     label: {

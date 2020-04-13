@@ -59,7 +59,7 @@ export const Footer = () => {
                     <Label
                         text="Artist Credit"
                         img={mdiDeviantart}
-                        link="https://www.deviantart.com/arsenixc"
+                        link="https://www.deviantart.com/arsenixc/art/Tokyo-street-636792646"
                         colour="#05cc47"
                     />
                 </Grid>

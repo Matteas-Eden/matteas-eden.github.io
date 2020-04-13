@@ -51,7 +51,7 @@ export const ContactForm = () => {
         <form
             name="simple-contact-form"
             accept-charset="utf-8"
-            // action="https://formspree.io/me@matteas.nz"
+            action="https://formspree.io/me@matteas.nz"
             method="post"
             className={classes.form}
         >

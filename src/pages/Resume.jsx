@@ -1,4 +1,5 @@
 import React from 'react';
+import ModalImage from 'react-modal-image';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import ResumeImage from '../assets/images/resume.png';
 import ResumeFile from '../assets/resume.pdf';
@@ -55,10 +56,11 @@ export const Resume = () => {
                     />
                 </Grid>
                 <Grid item>
-                    <img
+                    <ModalImage
                         className={classes.image}
-                        src={ResumeImage}
-                        alt="resumé"
+                        small={ResumeImage}
+                        medium={ResumeImage}
+                        alt="Resumé"
                     />
                 </Grid>
             </Grid>

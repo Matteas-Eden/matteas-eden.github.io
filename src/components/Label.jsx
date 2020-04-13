@@ -51,6 +51,7 @@ export const Label = props => {
     return (
         <Button
             className={props.small ? classes.smallButton : classes.button}
+            style={props.mobile ? { maxHeight: '11vmin' } : {}}
             href={'' || props.link}
         >
             <Grid

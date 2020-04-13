@@ -14,6 +14,7 @@ const useStyles = makeStyles({
         fontFamily: 'high-tower',
         color: '#000',
         fontSize: '10vmin',
+        width: '70vmin',
     },
     image: {
         position: 'fixed',
@@ -44,7 +45,7 @@ export const Resume = props => {
                     )}
                     <Typography
                         className={classes.text}
-                        style={{ fontSize: '5vmin', width: '75vh' }}
+                        style={{ fontSize: '5vmin' }}
                         variant="h4"
                     >
                         Feel free to look over my experience, education and

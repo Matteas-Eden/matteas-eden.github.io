@@ -1,6 +1,5 @@
 import React from 'react';
-import { Grid, Typography, makeStyles, useMediaQuery } from '@material-ui/core';
-import Icon from '@mdi/react';
+import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { Label } from './Label';
 
 const useStyles = makeStyles({

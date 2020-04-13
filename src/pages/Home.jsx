@@ -30,8 +30,8 @@ export const Home = () => {
                 <br />
                 Welcome to my little corner of the internet. You can use the
                 links on the left to read about me, see some of the cool
-                projects I've been involved with or even take a look at my
-                Resumé if you're an employer and looking to hire.
+                projects I've been involved with or take a look at my Resumé if
+                you're an employer and looking to hire.
             </Typography>
             {/* <Typography
                 className={clsx(classes.root, classes.japanese)}

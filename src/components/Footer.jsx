@@ -18,17 +18,17 @@ const useStyles = makeStyles({
     },
 });
 
-export const Footer = () => {
+export const Footer = props => {
     const classes = useStyles();
 
     return (
         <div
             style={{
-                width: '74vw',
-                height: '10vh',
+                width: props.mobile ? '94vw' : '74vw',
+                height: props.mobile ? '8vh' : '10vh',
                 borderTop: '1px solid black',
                 position: 'fixed',
-                bottom: '5vh',
+                bottom: props.mobile ? '5vmin' : '5vh',
                 marginLeft: '-1vw',
                 paddingLeft: '1vw',
                 paddingRight: '-1vw',
@@ -42,6 +42,7 @@ export const Footer = () => {
             >
                 <Grid item className={classes.label}>
                     <Label
+                        mobile={props.mobile}
                         text="My GitHub"
                         img={mdiGithub}
                         link="https://www.github.com/matteas-eden"
@@ -49,6 +50,7 @@ export const Footer = () => {
                 </Grid>
                 <Grid item className={classes.label}>
                     <Label
+                        mobile={props.mobile}
                         text="My LinkedIn"
                         img={mdiLinkedin}
                         link="https://www.linkedin.com/in/matteas-eden"
@@ -57,6 +59,7 @@ export const Footer = () => {
                 </Grid>
                 <Grid item className={classes.label}>
                     <Label
+                        mobile={props.mobile}
                         text="Artist Credit"
                         img={mdiDeviantart}
                         link="https://www.deviantart.com/arsenixc/art/Tokyo-street-636792646"

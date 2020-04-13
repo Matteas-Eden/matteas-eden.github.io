@@ -16,7 +16,7 @@ import { Footer } from '../components/Footer';
 export const Mobile = props => {
     return (
         <div className="mobile-content card">
-            <FrostedGlassView bg={props.bg} className="my-glass">
+            <FrostedGlassView mobile bg={props.bg} className="my-glass">
                 <MobileHeader />
                 <div
                     className="display-content"
@@ -40,7 +40,7 @@ export const Mobile = props => {
                         </Route>
                         <Redirect to="/" />
                     </Switch>
-                    <Footer />
+                    <Footer mobile />
                 </div>
             </FrostedGlassView>
         </div>

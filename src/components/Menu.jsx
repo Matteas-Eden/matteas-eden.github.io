@@ -3,7 +3,6 @@ import React from 'react';
 import { NavMenu } from './NavMenu';
 import { FrostedGlassView } from './FrostedGlassView';
 import { SignatureCalligraphy } from './SignatureCalligraphy';
-import { Construction } from '../pages/Construction';
 
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -39,9 +38,9 @@ export const Menu = props => {
                         },
                     ]}
                 />
-                <div style={{ position: 'relative', top: '45vh' }}>
+                {/* <div style={{ position: 'relative', top: '45vh' }}>
                     <Construction />
-                </div>
+                </div> */}
             </FrostedGlassView>
         </div>
     );

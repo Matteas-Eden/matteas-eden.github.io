@@ -5,7 +5,7 @@ const useStyles = makeStyles({
     root: {
         fontFamily: 'high-tower',
         color: '#000',
-        fontSize: '2.5vw',
+        fontSize: '5vmin',
     },
 });
 

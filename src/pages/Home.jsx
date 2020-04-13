@@ -5,7 +5,7 @@ import { Typography, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
     root: {
         color: '#000',
-        fontSize: '7vh',
+        fontSize: '7vmin',
     },
     english: {
         fontFamily: 'high-tower',
@@ -30,7 +30,7 @@ export const Home = () => {
                 <br />
                 Welcome to my little corner of the internet. You can use the
                 links on the left to read about me, see some of the cool
-                projects I've been involved with or take a look at my Resumé if
+                projects I've been involved with or take a look at my resumé if
                 you're an employer and looking to hire.
             </Typography>
             {/* <Typography

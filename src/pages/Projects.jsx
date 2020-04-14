@@ -31,6 +31,7 @@ export const Projects = props => {
             <Grid container spacing={1} alignItems="center">
                 <Grid item>
                     <ProjectCard
+                        mobile={props.mobile}
                         title="Roll for Reaction"
                         description="Roguelike dungeon crawler with turn based combat"
                         image={RollForReactionLogo}
@@ -53,6 +54,7 @@ export const Projects = props => {
                 </Grid>
                 <Grid item>
                     <ProjectCard
+                        mobile={props.mobile}
                         title="Bakugan Rerolled"
                         description="Arcade card-battler designed to emulate 2007 anime Bakugan"
                         image={BakuganRerolledLogo}
@@ -73,6 +75,7 @@ export const Projects = props => {
                 </Grid>
                 <Grid item>
                     <ProjectCard
+                        mobile={props.mobile}
                         title="matteas.nz"
                         description="A custom portfolio website with a uniquely original design"
                         image={SiteLogo}
@@ -116,6 +119,7 @@ export const Projects = props => {
                 </Grid> */}
                 <Grid item>
                     <ProjectCard
+                        mobile={props.mobile}
                         title="Energize"
                         description="A side-scrolling action adventure game with LAN multiplayer"
                         image={EnergizeLogo}
@@ -135,6 +139,7 @@ export const Projects = props => {
                 </Grid>
                 <Grid item>
                     <ProjectCard
+                        mobile={props.mobile}
                         title="Outerstellar"
                         description="A top-down arcade shooter created in 5 days for a hackathon"
                         image={OuterstellarLogo}

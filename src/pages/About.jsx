@@ -26,7 +26,7 @@ export const About = () => {
                 But of course, I'm also pursuing graduate work opportunities as
                 I look to begin my career in Software Development.
                 <br />I have always been passionate in all that I do, whether
-                it's my accademic studies, my extracurricular commitments or my
+                it's my academic studies, my extracurricular commitments or my
                 work in industry - I always strive to give 110%.
             </Typography>
         </div>

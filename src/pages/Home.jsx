@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const Home = () => {
+export const Home = props => {
     const classes = useStyles();
 
     return (
@@ -29,9 +29,10 @@ export const Home = () => {
                 <br />
                 <br />
                 Welcome to my little corner of the internet. You can use the
-                links on the left to read about me, see some of the cool
-                projects I've been involved with or take a look at my resumé if
-                you're an employer and looking to hire.
+                links on {props.mobile ? 'the top bar' : 'the left'} to read
+                about me, see some of the cool projects I've been involved with
+                or take a look at my resumé if you're an employer and looking to
+                hire.
             </Typography>
             {/* <Typography
                 className={clsx(classes.root, classes.japanese)}

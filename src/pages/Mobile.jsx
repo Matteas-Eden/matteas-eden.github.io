@@ -20,7 +20,7 @@ export const Mobile = props => {
                 <MobileHeader />
                 <div
                     className="display-content"
-                    style={{ position: 'absolute', top: '3vmin' }}
+                    style={{ position: 'absolute', top: '9vmin' }}
                 >
                     <Switch>
                         <Route exact path="/">

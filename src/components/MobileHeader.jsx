@@ -13,7 +13,7 @@ export const MobileHeader = props => {
                 top: '0',
                 borderBottom: '1px solid black',
                 shadows: 'none',
-                height: '4vmin',
+                height: '10vmin',
                 width: '110%',
             }}
         >
@@ -22,8 +22,8 @@ export const MobileHeader = props => {
                 autoWidth
                 defaultValue="Home"
                 style={{
-                    height: '4vmin',
-                    fontSize: '3vmin',
+                    height: '10vmin',
+                    fontSize: '9vmin',
                     fontFamily: 'high-tower',
                     color: '#000',
                 }}

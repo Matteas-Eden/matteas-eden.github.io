@@ -31,7 +31,7 @@ export const Contact = props => {
                 Feel free to reach out to me via LinkedIn or send me an email by
                 filling out the form below.
             </Typography>
-            <ContactForm />
+            <ContactForm mobile={props.mobile} />
         </div>
     );
 };

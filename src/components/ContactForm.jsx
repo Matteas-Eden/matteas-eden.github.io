@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     },
     label: {
         fontFamily: 'high-tower',
-        fontSize: '1.5vw',
+        fontSize: '5vmin',
         color: '#000',
     },
     button: {
@@ -24,13 +24,13 @@ const useStyles = makeStyles({
         color: '#000',
     },
     input: {
+        position: 'absolute',
         background: 'none',
         border: '1px solid black',
         fontSize: '2.5vmin',
         color: '#101010',
-        height: '3vh',
-        width: '45vw',
-        marginTop: '-20vmin',
+        right: '1vmin',
+        width: '50%',
     },
     textarea: {
         background: 'none',
@@ -40,6 +40,46 @@ const useStyles = makeStyles({
         resize: 'none',
         height: '21vh',
         width: '45vw',
+    },
+    // Mobile Variant
+    mobileForm: {
+        position: 'relative',
+        border: '1px solid black',
+    },
+    mobileInner: {
+        border: 'none',
+        height: 'inherit',
+        width: 'inherit',
+    },
+    mobileLabel: {
+        fontFamily: 'high-tower',
+        fontSize: '5vmin',
+        color: '#000',
+    },
+    mobileButton: {
+        background: 'none',
+        border: '1px solid black',
+        fontFamily: 'high-tower',
+        fontSize: '7.5vmin',
+        color: '#000',
+    },
+    mobileInput: {
+        background: 'none',
+        border: '1px solid black',
+        fontSize: '2.5vmin',
+        color: '#101010',
+        height: '3vmin',
+        width: '75%',
+        marginTop: '-20vmin',
+    },
+    mobileTextarea: {
+        background: 'none',
+        border: '1px solid black',
+        fontSize: '2.5vmin',
+        color: '#101010',
+        resize: 'none',
+        height: '30vh',
+        width: '125%',
     },
 });
 
@@ -52,9 +92,11 @@ export const ContactForm = props => {
             accept-charset="utf-8"
             action="https://formspree.io/me@matteas.nz"
             method="post"
-            className={classes.form}
+            className={props.mobile ? classes.mobileForm : classes.form}
         >
-            <fieldset className={classes.inner}>
+            <fieldset
+                className={props.mobile ? classes.mobileInner : classes.inner}
+            >
                 <Grid container>
                     <Grid
                         item
@@ -64,13 +106,22 @@ export const ContactForm = props => {
                         justify="space-around"
                     >
                         <Grid item>
-                            <label className={classes.label} for="full-name">
+                            <label
+                                className={
+                                    props.mobile
+                                        ? classes.mobileLabel
+                                        : classes.label
+                                }
+                                for="full-name"
+                            >
                                 Name
                             </label>
-                            {/* </Grid>
-                        <Grid item> */}
                             <input
-                                className={classes.input}
+                                className={
+                                    props.mobile
+                                        ? classes.mobileInput
+                                        : classes.input
+                                }
                                 type="text"
                                 name="name"
                                 placeholder="First name Last name"
@@ -79,13 +130,21 @@ export const ContactForm = props => {
                         </Grid>
                         <Grid item>
                             <label
-                                className={classes.label}
+                                className={
+                                    props.mobile
+                                        ? classes.mobileLabel
+                                        : classes.label
+                                }
                                 for="email-address"
                             >
                                 Email Address
                             </label>
                             <input
-                                className={classes.input}
+                                className={
+                                    props.mobile
+                                        ? classes.mobileInput
+                                        : classes.input
+                                }
                                 type="email"
                                 name="_replyto"
                                 placeholder="email@domain.tld"
@@ -93,13 +152,22 @@ export const ContactForm = props => {
                             />
                         </Grid>
                         <Grid item>
-                            <label className={classes.label} for="message">
+                            <label
+                                className={
+                                    props.mobile
+                                        ? classes.mobileLabel
+                                        : classes.label
+                                }
+                                for="message"
+                            >
                                 Your Message
                             </label>
                             <textarea
-                                className={classes.textarea}
-                                rows="6"
-                                cols="50"
+                                className={
+                                    props.mobile
+                                        ? classes.mobileTextarea
+                                        : classes.textarea
+                                }
                                 name="message"
                                 placeholder="Lorem ipsum dolor sit amet..."
                                 required
@@ -113,9 +181,11 @@ export const ContactForm = props => {
                     />
                 </Grid>
             </fieldset>
-            <center style={{ marginTop: '-1vmin' }}>
+            <center style={{ marginTop: '-1vmin', marginBottom: '1vmin' }}>
                 <input
-                    className={classes.button}
+                    className={
+                        props.mobile ? classes.mobileButton : classes.button
+                    }
                     type="submit"
                     value="Submit"
                 />

@@ -8,12 +8,12 @@ const useStyles = makeStyles({
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
-        height: '9vh',
+        height: '9vmin',
     },
     text: {
         fontFamily: 'high-tower',
         color: '#000',
-        fontSize: '3.25vw',
+        fontSize: '3.5vw',
     },
     icon: {
         marginLeft: '-0.5vw',
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         textTransform: 'none',
         height: '4vmin',
         minWidth: '10vmin',
-        paddingTop: '2vmin',
+        // paddingTop: '2vmin',
     },
     smallText: {
         fontFamily: 'high-tower',
@@ -32,6 +32,7 @@ const useStyles = makeStyles({
         fontSize: '3vmin',
     },
     smallIcon: {
+        marginTop: '0.5vmin',
         marginLeft: '-1vmin',
     },
 });
@@ -79,14 +80,6 @@ export const Label = props => {
                     <Typography
                         className={
                             props.small ? classes.smallText : classes.text
-                        }
-                        style={
-                            !props.img && !props.small
-                                ? {}
-                                : {
-                                      marginTop: '-0.5vmin',
-                                      //   border: '2px solid green',
-                                  }
                         }
                     >
                         {props.text}

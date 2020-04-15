@@ -22,9 +22,9 @@ const useStyles = makeStyles({
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
-        height: '4vh',
+        height: '4vmin',
         minWidth: '10vmin',
-        paddingTop: '2vh',
+        paddingTop: '2vmin',
     },
     smallText: {
         fontFamily: 'high-tower',

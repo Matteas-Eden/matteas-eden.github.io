@@ -54,6 +54,61 @@ const useStyles = makeStyles({
         marginTop: '-1vh',
         marginRight: '1vh',
     },
+    // Mobile variant
+    mobileCard: {
+        border: '1px solid black',
+        minWidth: '72.5vmin',
+        maxHeight: '22.5vmin',
+        width: '90vmin',
+    },
+    mobileImage: {
+        border: '1px solid black',
+        margin: '0.5vh 0vh 0vh 0.5vh',
+        height: '20vmin',
+        width: '20vmin',
+    },
+    mobileInfo: {
+        position: 'relative',
+        // border: '1px solid green',
+        minHeight: '20vmin',
+        minWidth: '30vmin',
+        maxWidth: '60vmin',
+        marginLeft: '1vmin',
+    },
+    mobileTitle: {
+        position: 'absolute',
+        top: '0',
+        // border: '1px solid purple',
+        fontFamily: 'high-tower',
+        fontSize: '5vmin',
+        maxHeight: '5.5vmin',
+        minWidth: '30vmin',
+        color: '#000',
+    },
+    mobileDescription: {
+        position: 'absolute',
+        top: '7vmin',
+        // border: '1px solid red',
+        fontFamily: 'high-tower',
+        fontSize: '3.5vmin',
+        lineHeight: '100%',
+        color: '#000',
+        minHeight: '5vmin',
+        minWidth: '22.5vmin',
+    },
+    mobileTechLabels: {
+        position: 'absolute',
+        bottom: '0',
+        // border: '1px solid blue',
+        height: '4vmin',
+        minWidth: '24vmin',
+        marginBottom: '0.5vmin',
+    },
+    mobileLabel: {
+        height: '4vmin',
+        marginTop: '-0.5vmin',
+        marginRight: '1vmin',
+    },
 });
 
 export const ProjectCard = props => {
@@ -61,7 +116,7 @@ export const ProjectCard = props => {
 
     return (
         <Grid
-            className={classes.card}
+            className={props.mobile ? classes.mobileCard : classes.card}
             container
             direction="row"
             alignItems="center"
@@ -70,7 +125,9 @@ export const ProjectCard = props => {
             <Grid item>
                 {props.image && (
                     <img
-                        className={classes.image}
+                        className={
+                            props.mobile ? classes.mobileImage : classes.image
+                        }
                         src={props.image}
                         alt="project-logo"
                     />
@@ -82,20 +139,34 @@ export const ProjectCard = props => {
                 direction="column"
                 justify="center"
                 alignItems="flex-start"
-                className={classes.info}
+                className={props.mobile ? classes.mobileInfo : classes.info}
             >
                 <Grid item>
-                    <Typography className={classes.title}>
+                    <Typography
+                        className={
+                            props.mobile ? classes.mobileTitle : classes.title
+                        }
+                    >
                         {props.title}
                     </Typography>
                 </Grid>
                 <Grid item>
-                    <Typography className={classes.description}>
+                    <Typography
+                        className={
+                            props.mobile
+                                ? classes.mobileDescription
+                                : classes.description
+                        }
+                    >
                         {props.description}
                     </Typography>
                 </Grid>
                 <Grid
-                    className={classes.techLabels}
+                    className={
+                        props.mobile
+                            ? classes.mobileTechLabels
+                            : classes.techLabels
+                    }
                     item
                     container
                     direction="row"
@@ -103,9 +174,17 @@ export const ProjectCard = props => {
                 >
                     {props.labels &&
                         props.labels.map(label => (
-                            <Grid item className={classes.label}>
+                            <Grid
+                                item
+                                className={
+                                    props.mobile
+                                        ? classes.mobileLabel
+                                        : classes.label
+                                }
+                            >
                                 <Label
                                     small
+                                    mobile
                                     img={label.icon}
                                     text={label.name}
                                     colour={label.colour}

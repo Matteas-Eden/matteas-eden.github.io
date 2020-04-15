@@ -28,7 +28,15 @@ export const Projects = props => {
                     Never Stop Creating
                 </Typography>
             )}
-            <Grid container spacing={1} alignItems="center">
+            <Grid
+                container
+                spacing={1}
+                alignItems="center"
+                style={{
+                    maxHeight: props.mobile ? 'calc(81.75vh - 1vw)' : 'auto',
+                    overflowY: 'auto',
+                }}
+            >
                 <Grid item>
                     <ProjectCard
                         mobile={props.mobile}

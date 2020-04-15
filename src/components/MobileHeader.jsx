@@ -13,7 +13,7 @@ export const MobileHeader = props => {
                 top: '0',
                 borderBottom: '1px solid black',
                 shadows: 'none',
-                height: '4vh',
+                height: '4vmin',
                 width: '110%',
             }}
         >
@@ -21,7 +21,12 @@ export const MobileHeader = props => {
                 native
                 autoWidth
                 defaultValue="Home"
-                style={{ height: '4vh' }}
+                style={{
+                    height: '4vmin',
+                    fontSize: '3vmin',
+                    fontFamily: 'high-tower',
+                    color: '#000',
+                }}
                 onChange={event => {
                     let item = event.target.value;
                     console.log(history);

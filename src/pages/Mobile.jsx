@@ -24,7 +24,7 @@ export const Mobile = props => {
                 >
                     <Switch>
                         <Route exact path="/">
-                            <Home />
+                            <Home mobile />
                         </Route>
                         <Route exact path="/about">
                             <About mobile />

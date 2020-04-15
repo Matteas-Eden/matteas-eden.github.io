@@ -1,13 +1,13 @@
 import React from 'react';
 import ModalImage from 'react-modal-image';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Typography, makeStyles, useMediaQuery } from '@material-ui/core';
 import ResumeImage from '../assets/images/resume.png';
 import ResumeFile from '../assets/resume.pdf';
 import { Label } from '../components/Label';
 import { mdiDownload } from '@mdi/js';
 
 const useStyles = makeStyles({
-    root: {
+    page: {
         position: 'relative',
     },
     text: {
@@ -18,19 +18,32 @@ const useStyles = makeStyles({
     },
     image: {
         position: 'fixed',
-        right: '4vh',
+        right: '5vmin',
         border: '1px solid black',
         height: '77vh',
         marginRight: '-1vh',
         marginTop: '-1vh',
     },
+    mobileImage: {
+        right: '4vmin',
+        border: '1px solid black',
+        height: '130vmin',
+        marginTop: '1vmin',
+    },
 });
 
 export const Resume = props => {
     const classes = useStyles();
+    const landscapeMatches = useMediaQuery('(min-aspect-ratio: 1000/750)');
 
     return (
-        <div className={classes.root}>
+        <div
+            className={classes.page}
+            style={{
+                overflowY: 'auto',
+                maxHeight: props.mobile ? 'calc(81.75vh - 1vw)' : 'auto',
+            }}
+        >
             <Grid
                 container
                 direction="row"
@@ -56,11 +69,16 @@ export const Resume = props => {
                         text="Download PDF"
                         link={ResumeFile}
                         img={mdiDownload}
+                        mobile={props.mobile}
                     />
                 </Grid>
                 <Grid item>
                     <ModalImage
-                        className={classes.image}
+                        className={
+                            props.mobile && !landscapeMatches
+                                ? classes.mobileImage
+                                : classes.image
+                        }
                         small={ResumeImage}
                         medium={ResumeImage}
                         alt="Resumé"

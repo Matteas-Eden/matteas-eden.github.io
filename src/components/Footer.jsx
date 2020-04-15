@@ -5,6 +5,16 @@ import { Label } from './Label';
 import { mdiGithub, mdiLinkedin, mdiDeviantart } from '@mdi/js';
 
 const useStyles = makeStyles({
+    footer: {
+        width: props => (props.mobile ? '94vw' : '74vw'),
+        height: props => (props.mobile ? '8vh' : '10vh'),
+        borderTop: '1px solid black',
+        position: 'fixed',
+        bottom: props => (props.mobile ? '5vmin' : '5vh'),
+        marginLeft: '-1vw',
+        paddingLeft: '1vw',
+        paddingRight: '-1vw',
+    },
     root: {
         fontFamily: 'high-tower',
         color: '#000',
@@ -19,21 +29,10 @@ const useStyles = makeStyles({
 });
 
 export const Footer = props => {
-    const classes = useStyles();
+    const classes = useStyles(props);
 
     return (
-        <div
-            style={{
-                width: props.mobile ? '94vw' : '74vw',
-                height: props.mobile ? '8vh' : '10vh',
-                borderTop: '1px solid black',
-                position: 'fixed',
-                bottom: props.mobile ? '5vmin' : '5vh',
-                marginLeft: '-1vw',
-                paddingLeft: '1vw',
-                paddingRight: '-1vw',
-            }}
-        >
+        <div className={classes.footer}>
             <Grid
                 container
                 direction="row"

@@ -22,7 +22,6 @@ const useStyles = makeStyles({
         border: '1px solid black',
         height: '77vh',
         marginRight: '-1vh',
-        marginTop: '-1vh',
     },
     mobileImage: {
         right: '4vmin',
@@ -41,7 +40,9 @@ export const Resume = props => {
             className={classes.page}
             style={{
                 overflowY: 'auto',
-                maxHeight: props.mobile ? 'calc(81.75vh - 1vw)' : 'auto',
+                overflowX: 'hidden',
+                // maxHeight: props.mobile ? 'calc(81.75vh - 2vw)' : 'auto',
+                maxHeight: props.mobile ? 'calc(90vh - 5vmin - 4vh)' : 'auto',
             }}
         >
             <Grid

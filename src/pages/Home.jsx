@@ -6,6 +6,9 @@ const useStyles = makeStyles({
     root: {
         color: '#000',
         fontSize: '7vmin',
+        height: props => (props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '70vh'),
+        overflowX: 'none',
+        overflowY: 'auto',
     },
     english: {
         fontFamily: 'high-tower',
@@ -17,7 +20,7 @@ const useStyles = makeStyles({
 });
 
 export const Home = props => {
-    const classes = useStyles();
+    const classes = useStyles(props);
 
     return (
         <div>

@@ -11,6 +11,9 @@ import OuterstellarLogo from '../assets/project-logos/outerstellar.png';
 import EnergizeLogo from '../assets/project-logos/energize.png';
 
 const useStyles = makeStyles({
+    page: {
+        position: 'relative',
+    },
     root: {
         fontFamily: 'high-tower',
         color: '#000',
@@ -19,10 +22,10 @@ const useStyles = makeStyles({
 });
 
 export const Projects = props => {
-    const classes = useStyles();
+    const classes = useStyles(props);
 
     return (
-        <div className="project-page">
+        <div className={classes.page}>
             {!props.mobile && (
                 <Typography className={classes.root} variant="h3">
                     Never Stop Creating
@@ -33,7 +36,9 @@ export const Projects = props => {
                 spacing={1}
                 alignItems="center"
                 style={{
-                    maxHeight: props.mobile ? 'calc(81.75vh - 1vw)' : 'auto',
+                    marginTop: props.mobile ? '0.5vmin' : '0',
+                    height: props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '65vh',
+                    overflowX: 'none',
                     overflowY: 'auto',
                 }}
             >

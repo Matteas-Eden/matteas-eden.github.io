@@ -40,8 +40,8 @@ export const Mobile = props => {
                         </Route>
                         <Redirect to="/" />
                     </Switch>
-                    <Footer mobile />
                 </div>
+                <Footer mobile />
             </FrostedGlassView>
         </div>
     );

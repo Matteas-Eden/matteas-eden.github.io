@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.adc1cfc7.chunk.css",
+    "main.css": "/static/css/main.5872f436.chunk.css",
     "main.js": "/static/js/main.c06555ff.chunk.js",
     "main.js.map": "/static/js/main.c06555ff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fbd00274.js",
@@ -8,9 +8,9 @@
     "static/js/2.ee63a2f7.chunk.js": "/static/js/2.ee63a2f7.chunk.js",
     "static/js/2.ee63a2f7.chunk.js.map": "/static/js/2.ee63a2f7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c85a293b5a0960aad2bf7e3268b87e96.js": "/precache-manifest.c85a293b5a0960aad2bf7e3268b87e96.js",
+    "precache-manifest.05e4aae31d701f37046f0ce92a0ea8c8.js": "/precache-manifest.05e4aae31d701f37046f0ce92a0ea8c8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.adc1cfc7.chunk.css.map": "/static/css/main.adc1cfc7.chunk.css.map",
+    "static/css/main.5872f436.chunk.css.map": "/static/css/main.5872f436.chunk.css.map",
     "static/js/2.ee63a2f7.chunk.js.LICENSE.txt": "/static/js/2.ee63a2f7.chunk.js.LICENSE.txt",
     "static/media/TokyoStreet.png": "/static/media/TokyoStreet.f491be40.png",
     "static/media/bakugan-rerolled.png": "/static/media/bakugan-rerolled.29bc4cc7.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.fbd00274.js",
     "static/js/2.ee63a2f7.chunk.js",
-    "static/css/main.adc1cfc7.chunk.css",
+    "static/css/main.5872f436.chunk.css",
     "static/js/main.c06555ff.chunk.js"
   ]
 }

@@ -124,7 +124,6 @@ export const ContactForm = props => {
                                 }
                                 type="text"
                                 name="name"
-                                placeholder="First name Last name"
                                 required
                             />
                         </Grid>
@@ -147,7 +146,6 @@ export const ContactForm = props => {
                                 }
                                 type="email"
                                 name="_replyto"
-                                placeholder="email@domain.tld"
                                 required
                             />
                         </Grid>
@@ -169,7 +167,6 @@ export const ContactForm = props => {
                                         : classes.textarea
                                 }
                                 name="message"
-                                placeholder="Lorem ipsum dolor sit amet..."
                                 required
                             ></textarea>
                         </Grid>

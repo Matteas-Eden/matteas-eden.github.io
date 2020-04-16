@@ -185,7 +185,7 @@ export const ProjectCard = props => {
                                 <Label
                                     small
                                     mobile
-                                    img={label.icon}
+                                    // img={label.icon}
                                     text={label.name}
                                     colour={label.colour}
                                 />

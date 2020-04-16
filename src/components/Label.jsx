@@ -8,32 +8,41 @@ const useStyles = makeStyles({
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
-        height: '9vmin',
+        height: '80%',
     },
     text: {
+        position: props => (props.mobile ? 'relative' : 'static'),
+        top: '2vmin',
         fontFamily: 'high-tower',
         color: '#000',
-        fontSize: '3.5vw',
+        fontSize: props => (props.mobile ? '4vmin' : '3.5vw'),
     },
     icon: {
-        marginLeft: '-0.5vw',
+        position: 'relative',
+        top: '0.75vw',
+        left: '-0.5vw',
     },
     smallButton: {
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
-        height: '4vmin',
+        height: '3.5vmin',
         minWidth: '10vmin',
-        // paddingTop: '2vmin',
     },
     smallText: {
+        // position: 'relative',
+        // top: props => (props.img ? '0' : '0.3vmin'),
+        // marginTop: props => (props.mobile && props.img ? '-2px' : '0'),
         fontFamily: 'high-tower',
         color: '#000',
         fontSize: '3vmin',
+        // marginLeft: '-1vh',
     },
     smallIcon: {
-        marginTop: '0.5vmin',
-        marginLeft: '-1vmin',
+        // position: 'relative',
+        // top: '-1vmin',
+        // height: '2.75vmin',
+        // left: '-1vmin',
     },
 });
 
@@ -47,7 +56,7 @@ const useStyles = makeStyles({
  * * colour/color - Colour of icon (optional, defaults to black)
  */
 export const Label = props => {
-    const classes = useStyles();
+    const classes = useStyles(props);
 
     return (
         <Button
@@ -55,12 +64,7 @@ export const Label = props => {
             style={props.mobile ? { maxHeight: '11vmin' } : {}}
             href={'' || props.link}
         >
-            <Grid
-                container
-                direction="row"
-                alignItems="center"
-                justify="space-evenly"
-            >
+            <Grid container direction="row">
                 {props.img && (
                     <Grid
                         item
@@ -72,7 +76,7 @@ export const Label = props => {
                             path={props.img}
                             title="label-icon"
                             color={props.colour || props.color || 'black'}
-                            size={props.small ? '3vmin' : '7vmin'}
+                            size={props.small ? '2.75vmin' : '7vmin'}
                         />
                     </Grid>
                 )}

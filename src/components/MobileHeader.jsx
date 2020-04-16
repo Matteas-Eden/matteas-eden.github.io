@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { AppBar, Select } from '@material-ui/core';
+import { AppBar, Select, MenuItem } from '@material-ui/core';
 
 export const MobileHeader = props => {
     let history = useHistory();
@@ -18,7 +18,6 @@ export const MobileHeader = props => {
             }}
         >
             <Select
-                native
                 autoWidth
                 defaultValue="Home"
                 style={{
@@ -37,7 +36,7 @@ export const MobileHeader = props => {
             >
                 {['Home', 'About', 'Projects', 'Resumé', 'Contact'].map(
                     page => (
-                        <option>{page}</option>
+                        <MenuItem value={page}>{page}</MenuItem>
                     )
                 )}
             </Select>

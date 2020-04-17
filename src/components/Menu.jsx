@@ -38,9 +38,6 @@ export const Menu = props => {
                         },
                     ]}
                 />
-                {/* <div style={{ position: 'relative', top: '45vh' }}>
-                    <Construction />
-                </div> */}
             </FrostedGlassView>
         </div>
     );

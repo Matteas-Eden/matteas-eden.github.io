@@ -27,7 +27,7 @@ const useStyles = makeStyles({
         borderRadius: '0',
         textTransform: 'none',
         height: '3.5vmin',
-        minWidth: '10vmin',
+        minWidth: '1vmin',
     },
     smallText: {
         // position: 'relative',
@@ -36,8 +36,10 @@ const useStyles = makeStyles({
         fontFamily: 'high-tower',
         color: '#000',
         fontSize: '3vmin',
-        margin: '-1vh -1vh -1vh -1vh',
-        // marginLeft: '-1vh',
+        marginTop: '-1vh',
+        marginBottom: '-1vh',
+        // marginRight: '-1vh',
+        // marginLeft: '-0.5vh',
     },
     smallIcon: {
         // position: 'relative',

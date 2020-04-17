@@ -9,6 +9,7 @@ import RollForReactionLogo from '../assets/project-logos/roll-for-reaction.png';
 import SiteLogo from '../assets/project-logos/site-logo.png';
 import OuterstellarLogo from '../assets/project-logos/outerstellar.png';
 import EnergizeLogo from '../assets/project-logos/energize.png';
+import AnzenLogo from '../assets/project-logos/anzen.png';
 
 const useStyles = makeStyles({
     page: {
@@ -47,7 +48,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="Roll for Reaction"
                         description="Roguelike dungeon crawler with turn based combat"
-                        link="https://matteas.nz/roll-for-reaction"
+                        link="https://github.com/matteas-eden/roll-for-reaction"
                         image={RollForReactionLogo}
                         labels={[
                             {
@@ -71,7 +72,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="Bakugan Rerolled"
                         description="Arcade card-battler designed to emulate 2007 anime Bakugan"
-                        link="https://matteas.nz/bakugan-rerolled"
+                        link="https://github.com/matteas-eden/bakugan-rerolled"
                         image={BakuganRerolledLogo}
                         labels={[
                             {
@@ -160,6 +161,7 @@ export const Projects = props => {
                         title="Anzen"
                         description="A full-stack hybrid peer-to-peer messaging service"
                         link="https://github.com/matteas-eden/anzen"
+                        image={AnzenLogo}
                         labels={[
                             { name: 'Python' },
                             { name: 'CherryPy' },
@@ -172,7 +174,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="Outerstellar"
                         description="A top-down arcade shooter created in 5 days for a hackathon"
-                        // link="https://github.com/matteas-eden/outerstellar"
+                        link="https://github.com/matteas-eden/outerstellar"
                         image={OuterstellarLogo}
                         labels={[{ name: 'Gamemaker' }]}
                     />

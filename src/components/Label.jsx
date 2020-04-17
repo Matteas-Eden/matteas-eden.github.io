@@ -36,6 +36,7 @@ const useStyles = makeStyles({
         fontFamily: 'high-tower',
         color: '#000',
         fontSize: '3vmin',
+        margin: '-1vh -1vh -1vh -1vh',
         // marginLeft: '-1vh',
     },
     smallIcon: {
@@ -61,7 +62,7 @@ export const Label = props => {
     return (
         <Button
             className={props.small ? classes.smallButton : classes.button}
-            style={props.mobile ? { maxHeight: '11vmin' } : {}}
+            style={props.mobile && !props.small ? { maxHeight: '11vmin' } : {}}
             href={'' || props.link}
         >
             <Grid container direction="row">

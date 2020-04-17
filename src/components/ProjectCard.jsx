@@ -1,17 +1,28 @@
 import React from 'react';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Typography, makeStyles, ButtonBase } from '@material-ui/core';
+import { Icon } from '@mdi/react';
+import { mdiGithub } from '@mdi/js';
 import { Label } from './Label';
 
 const useStyles = makeStyles({
     card: {
+        position: 'relative',
         border: '1px solid black',
         minWidth: '35vw',
     },
     image: {
+        position: 'relative',
         border: '1px solid black',
-        margin: '0.5vh 0vh 0vh 0.5vh',
+        borderRadius: '0',
+        margin: '0.5vh 0.5vh 0.5vh 0.5vh',
+        padding: '0',
         height: '18vh',
         width: '18vh',
+    },
+    icon: {
+        position: 'absolute',
+        top: '0',
+        right: '0.5vh',
     },
     info: {
         position: 'relative',
@@ -22,7 +33,7 @@ const useStyles = makeStyles({
     },
     title: {
         position: 'absolute',
-        top: '-1.5vh',
+        top: '-1vh',
         // border: '1px solid purple',
         fontFamily: 'high-tower',
         fontSize: '2.5vw',
@@ -56,14 +67,18 @@ const useStyles = makeStyles({
     },
     // Mobile variant
     mobileCard: {
+        position: 'relative',
         border: '1px solid black',
         minWidth: '72.5vmin',
         maxHeight: '22.5vmin',
         width: '90vmin',
     },
     mobileImage: {
+        position: 'relative',
         border: '1px solid black',
-        margin: '0.5vh 0vh 0vh 0.5vh',
+        borderRadius: '0',
+        margin: '0.5vh 0.5vh 0.5vh 0.5vh',
+        padding: '0',
         height: '20vmin',
         width: '20vmin',
     },
@@ -112,7 +127,7 @@ const useStyles = makeStyles({
 });
 
 export const ProjectCard = props => {
-    const classes = useStyles();
+    const classes = useStyles(props);
 
     return (
         <Grid
@@ -124,13 +139,14 @@ export const ProjectCard = props => {
         >
             <Grid item>
                 {props.image && (
-                    <img
+                    <ButtonBase
                         className={
                             props.mobile ? classes.mobileImage : classes.image
                         }
-                        src={props.image}
-                        alt="project-logo"
-                    />
+                        href={props.link}
+                    >
+                        <img src={props.image} alt="project-logo" />
+                    </ButtonBase>
                 )}
             </Grid>
             <Grid
@@ -192,6 +208,17 @@ export const ProjectCard = props => {
                             </Grid>
                         ))}
                 </Grid>
+            </Grid>
+            <Grid item>
+                {props.link && (
+                    <a className={classes.icon} href={props.link}>
+                        <Icon
+                            path={mdiGithub}
+                            size={props.mobile ? '3vh' : '4vh'}
+                            color="black"
+                        />
+                    </a>
+                )}
             </Grid>
         </Grid>
     );

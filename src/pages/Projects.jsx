@@ -47,6 +47,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="Roll for Reaction"
                         description="Roguelike dungeon crawler with turn based combat"
+                        link="https://matteas.nz/roll-for-reaction"
                         image={RollForReactionLogo}
                         labels={[
                             {
@@ -70,6 +71,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="Bakugan Rerolled"
                         description="Arcade card-battler designed to emulate 2007 anime Bakugan"
+                        link="https://matteas.nz/bakugan-rerolled"
                         image={BakuganRerolledLogo}
                         labels={[
                             {
@@ -91,6 +93,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="matteas.nz"
                         description="A custom portfolio website with a uniquely original design"
+                        link="https://github.com/matteas-eden/matteas-eden.github.io"
                         image={SiteLogo}
                         labels={[
                             {
@@ -135,6 +138,7 @@ export const Projects = props => {
                         mobile={props.mobile}
                         title="Energize"
                         description="A side-scrolling action adventure game with LAN multiplayer"
+                        link="https://github.com/matteas-eden/energize"
                         image={EnergizeLogo}
                         labels={[
                             {
@@ -153,8 +157,22 @@ export const Projects = props => {
                 <Grid item>
                     <ProjectCard
                         mobile={props.mobile}
+                        title="Anzen"
+                        description="A full-stack hybrid peer-to-peer messaging service"
+                        link="https://github.com/matteas-eden/anzen"
+                        labels={[
+                            { name: 'Python' },
+                            { name: 'CherryPy' },
+                            { name: 'Jinja' },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        mobile={props.mobile}
                         title="Outerstellar"
                         description="A top-down arcade shooter created in 5 days for a hackathon"
+                        // link="https://github.com/matteas-eden/outerstellar"
                         image={OuterstellarLogo}
                         labels={[{ name: 'Gamemaker' }]}
                     />

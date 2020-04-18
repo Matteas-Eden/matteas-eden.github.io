@@ -16,7 +16,11 @@ export const MenuItem = props => {
             to={props.location}
         >
             <Typography
-                style={{ fontFamily: 'high-tower', fontSize: '10vmin' }}
+                style={{
+                    fontFamily: 'high-tower',
+                    fontSize: '10vmin',
+                    marginLeft: '-0.5vmin',
+                }}
             >
                 {props.item}
             </Typography>

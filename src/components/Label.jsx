@@ -8,7 +8,7 @@ const useStyles = makeStyles({
         border: '1px solid black',
         borderRadius: '0',
         textTransform: 'none',
-        height: '80%',
+        maxHeight: '80%',
     },
     text: {
         position: props => (props.mobile ? 'relative' : 'static'),

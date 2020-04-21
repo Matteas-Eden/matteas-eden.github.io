@@ -138,7 +138,7 @@ export const ProjectCard = props => {
             justify="flex-start"
         >
             <Grid item>
-                {props.image && props.mobile ? (
+                {/* {props.image && props.mobile ? (
                     <img
                         className={classes.mobileImage}
                         href={props.link}
@@ -149,6 +149,16 @@ export const ProjectCard = props => {
                     <ButtonBase className={classes.image} href={props.link}>
                         <img src={props.image} alt="project-logo" />
                     </ButtonBase>
+                )} */}
+                {props.image && (
+                    <img
+                        className={
+                            props.mobile ? classes.mobileImage : classes.image
+                        }
+                        href={props.link}
+                        src={props.image}
+                        alt="project-logo"
+                    />
                 )}
             </Grid>
             <Grid

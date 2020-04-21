@@ -42,7 +42,6 @@ export const Resume = props => {
                 overflowY: 'auto',
                 overflowX: 'hidden',
                 height: props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '70vh',
-                // maxHeight: props.mobile ? 'calc(90vh - 10vmin - 4vh)' : 'auto',
             }}
         >
             <Grid

@@ -37,15 +37,6 @@ export const Home = props => {
                 or take a look at my resumé if you're an employer and looking to
                 hire.
             </Typography>
-            {/* <Typography
-                className={clsx(classes.root, classes.japanese)}
-                variant="h3"
-            >
-                <br />
-                こんにちは、イーデン・マテアスです。私のサイトへようこそ。
-                <br />
-                現在まだ工事中だけど、きっとこのスペースを見続けてください！
-            </Typography> */}
         </div>
     );
 };

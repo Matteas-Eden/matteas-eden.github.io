@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, makeStyles, ButtonBase } from '@material-ui/core';
+import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { Icon } from '@mdi/react';
 import { mdiGithub } from '@mdi/js';
 import { Label } from './Label';
@@ -138,18 +138,6 @@ export const ProjectCard = props => {
             justify="flex-start"
         >
             <Grid item>
-                {/* {props.image && props.mobile ? (
-                    <img
-                        className={classes.mobileImage}
-                        href={props.link}
-                        src={props.image}
-                        alt="project-logo"
-                    />
-                ) : (
-                    <ButtonBase className={classes.image} href={props.link}>
-                        <img src={props.image} alt="project-logo" />
-                    </ButtonBase>
-                )} */}
                 {props.image && (
                     <img
                         className={

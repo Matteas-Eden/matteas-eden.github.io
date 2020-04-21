@@ -30,26 +30,17 @@ const useStyles = makeStyles({
         minWidth: '1vmin',
     },
     smallText: {
-        // position: 'relative',
-        // top: props => (props.img ? '0' : '0.3vmin'),
-        // marginTop: props => (props.mobile && props.img ? '-2px' : '0'),
         fontFamily: 'high-tower',
         color: '#000',
         fontSize: '3vmin',
         marginTop: '-1vh',
         marginBottom: '-1vh',
-        // marginRight: '-1vh',
-        // marginLeft: '-0.5vh',
     },
     smallIcon: {
-        // position: 'relative',
-        // top: '-1vmin',
-        // height: '2.75vmin',
-        // left: '-1vmin',
+        position: 'absolute',
+        left: '0.1vh',
     },
 });
-
-//  className={`{props.className}``_text`}
 
 /**
  * Props:

@@ -70,6 +70,27 @@ export const Projects = props => {
                 <Grid item>
                     <ProjectCard
                         mobile={props.mobile}
+                        title="matteas.nz"
+                        description="A custom portfolio website with a uniquely original design"
+                        link="https://github.com/matteas-eden/matteas-eden.github.io"
+                        image={SiteLogo}
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
+                                colour: '#61dbfb',
+                            },
+                            {
+                                name: 'Sass',
+                                icon: mdiSass,
+                                colour: '#9e5680',
+                            },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        mobile={props.mobile}
                         title="Bakugan Rerolled"
                         description="Arcade card-battler designed to emulate 2007 anime Bakugan"
                         link="https://github.com/matteas-eden/bakugan-rerolled"
@@ -89,51 +110,6 @@ export const Projects = props => {
                         ]}
                     />
                 </Grid>
-                <Grid item>
-                    <ProjectCard
-                        mobile={props.mobile}
-                        title="matteas.nz"
-                        description="A custom portfolio website with a uniquely original design"
-                        link="https://github.com/matteas-eden/matteas-eden.github.io"
-                        image={SiteLogo}
-                        labels={[
-                            {
-                                name: 'React',
-                                icon: mdiReact,
-                                colour: '#61dbfb',
-                            },
-                            {
-                                name: 'Sass',
-                                icon: mdiSass,
-                                colour: '#9e5680',
-                            },
-                            // {
-                            //     name: 'Material UI',
-                            //     icon: mdiMaterialUi,
-                            //     colour: '#1e90ff',
-                            // },
-                        ]}
-                    />
-                </Grid>
-                {/* <Grid item>
-                    <ProjectCard
-                        title="Feedr"
-                        description="A simple and elegant media feed aggregrator"
-                        image={FeedrLogo}
-                        labels={[
-                            {
-                                name: 'React',
-                                icon: mdiReact,
-                                colour: '#61dbfb',
-                            },
-                            {
-                                name: 'Material UI',
-                                icon: mdiMaterialUi,
-                                colour: '#61dbfb',
-                            },
-                        ]}
-                    />
-                </Grid> */}
                 <Grid item>
                     <ProjectCard
                         mobile={props.mobile}
@@ -181,8 +157,10 @@ export const Projects = props => {
                 </Grid>
                 {/* <Grid item>
                     <ProjectCard
-                        title="Doto"
-                        description="A to-do list webapp that integrates with Google accounts"
+                        title="Feedr"
+                        description="A simple and elegant media feed aggregrator"
+                        link="https://github.com/matteas-eden/feedr"
+                        image={FeedrLogo}
                         labels={[
                             {
                                 name: 'React',
@@ -190,9 +168,27 @@ export const Projects = props => {
                                 colour: '#61dbfb',
                             },
                             {
-                                name: 'Material UI',
-                                icon: mdiMaterialUi,
+                                name: 'Spring',
+                            },
+                        ]}
+                    />
+                </Grid>
+                <Grid item>
+                    <ProjectCard
+                        title="Doto"
+                        description="A to-do list webapp that integrates with Google accounts"
+                        link="https://github.com/matteas-eden/doto"
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
                                 colour: '#61dbfb',
+                            },
+                            {
+                                name: 'MongoDB',
+                            },
+                            {
+                                name: 'Express',
                             },
                         ]}
                     />

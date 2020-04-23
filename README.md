@@ -1,7 +1,5 @@
 ![WebsiteLogo](https://user-images.githubusercontent.com/45587386/77818965-02f7eb80-713c-11ea-994a-7600c1a31a32.png "matteas.nz")
 
-> Work In Progress
-
 My personal website. Designed by me, implemented by me and about me - for everyone to see.
 
 ### Development

@@ -25,12 +25,16 @@ export const Home = props => {
     return (
         <div>
             <Typography
+                className={classes.english}
+                style={{ color: '#000' }}
+                variant="h1"
+            >
+                Hi, I'm Matteas.
+            </Typography>
+            <Typography
                 className={clsx(classes.root, classes.english)}
                 variant="h3"
             >
-                Hi, I'm Matteas Eden.
-                <br />
-                <br />
                 Welcome to my little corner of the internet. You can use the
                 links on {props.mobile ? 'the top bar' : 'the left'} to read
                 about me, see some of the cool projects I've been involved with

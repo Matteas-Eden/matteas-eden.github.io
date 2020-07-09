@@ -3,7 +3,7 @@ import ModalImage from 'react-modal-image';
 import { Grid, Typography, makeStyles, useMediaQuery } from '@material-ui/core';
 import ResumeImage from '../assets/images/resume.png';
 import ResumeFile from '../assets/resume.pdf';
-import { Label } from '../components/Label';
+import { LabelButton } from '../components/LabelButton';
 import { mdiDownload } from '@mdi/js';
 
 const useStyles = makeStyles({
@@ -65,7 +65,7 @@ export const Resume = props => {
                         skillset.
                     </Typography>
                     <br />
-                    <Label
+                    <LabelButton
                         text="Download PDF"
                         link={ResumeFile}
                         img={mdiDownload}

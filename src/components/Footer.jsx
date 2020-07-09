@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Grid, makeStyles } from '@material-ui/core';
-import { Label } from './Label';
+import { LabelButton } from './LabelButton';
 import { mdiGithub, mdiLinkedin, mdiDeviantart } from '@mdi/js';
 
 const useStyles = makeStyles({
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         color: '#000',
         fontSize: '2vw',
     },
-    label: {
+    labelButton: {
         height: '10vh',
         marginLeft: '-0.5vw',
         marginTop: '0.5vh',
@@ -39,16 +39,16 @@ export const Footer = props => {
                 alignItems="center"
                 justify="flex-start"
             >
-                <Grid item className={classes.label}>
-                    <Label
+                <Grid item className={classes.labelButton}>
+                    <LabelButton
                         mobile={props.mobile}
                         text="My GitHub"
                         img={mdiGithub}
                         link="https://www.github.com/matteas-eden"
                     />
                 </Grid>
-                <Grid item className={classes.label}>
-                    <Label
+                <Grid item className={classes.labelButton}>
+                    <LabelButton
                         mobile={props.mobile}
                         text="My LinkedIn"
                         img={mdiLinkedin}
@@ -56,8 +56,8 @@ export const Footer = props => {
                         color="#0073b1"
                     />
                 </Grid>
-                <Grid item className={classes.label}>
-                    <Label
+                <Grid item className={classes.labelButton}>
+                    <LabelButton
                         mobile={props.mobile}
                         text="Artist Credit"
                         img={mdiDeviantart}

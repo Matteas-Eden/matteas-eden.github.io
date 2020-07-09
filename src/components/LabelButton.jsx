@@ -49,7 +49,7 @@ const useStyles = makeStyles({
  * * img - Icon for label (optional)
  * * colour/color - Colour of icon (optional, defaults to black)
  */
-export const Label = props => {
+export const LabelButton = props => {
     const classes = useStyles(props);
 
     return (

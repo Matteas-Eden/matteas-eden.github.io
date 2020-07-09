@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { Icon } from '@mdi/react';
 import { mdiGithub } from '@mdi/js';
-import { Label } from './Label';
+import { LabelButton } from './LabelButton';
 
 const useStyles = makeStyles({
     card: {
@@ -198,7 +198,7 @@ export const ProjectCard = props => {
                                         : classes.label
                                 }
                             >
-                                <Label
+                                <LabelButton
                                     small
                                     mobile
                                     // img={label.icon}

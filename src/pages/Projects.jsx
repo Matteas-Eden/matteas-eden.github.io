@@ -4,7 +4,8 @@ import { ProjectCard } from '../components/ProjectCard';
 
 import { mdiReact, mdiSass, mdiLanguageJava } from '@mdi/js';
 
-import BakuganRerolledLogo from '../assets/project-logos/bakugan-rerolled.png';
+// import BakuganRerolledLogo from '../assets/project-logos/bakugan-rerolled.png';
+import ReactLogo from '../assets/project-logos/react.png';
 import RollForReactionLogo from '../assets/project-logos/roll-for-reaction.png';
 import SiteLogo from '../assets/project-logos/site-logo.png';
 import OuterstellarLogo from '../assets/project-logos/outerstellar.png';
@@ -91,6 +92,27 @@ export const Projects = props => {
                 <Grid item>
                     <ProjectCard
                         mobile={props.mobile}
+                        title="React Template"
+                        description="A simple GitHub template repository for React projects"
+                        link="https://github.com/matteas-eden/react-template"
+                        image={ReactLogo}
+                        labels={[
+                            {
+                                name: 'React',
+                                icon: mdiReact,
+                                colour: '#61dbfb',
+                            },
+                            {
+                                name: 'Sass',
+                                icon: mdiSass,
+                                colour: '#9e5680',
+                            },
+                        ]}
+                    />
+                </Grid>
+                {/* <Grid item>
+                    <ProjectCard
+                        mobile={props.mobile}
                         title="Bakugan Rerolled"
                         description="Arcade card-battler designed to emulate 2007 anime Bakugan"
                         link="https://github.com/matteas-eden/bakugan-rerolled"
@@ -109,7 +131,7 @@ export const Projects = props => {
                             },
                         ]}
                     />
-                </Grid>
+                </Grid> */}
                 <Grid item>
                     <ProjectCard
                         mobile={props.mobile}

@@ -44,7 +44,7 @@
     "dependencies": {
         "@material-ui/core": "^4.11.0",
         "@material-ui/icons": "^4.5.1",
-        "@mdi/js": "^5.4.55",
+        "@mdi/js": "^5.5.55",
         "@mdi/react": "^1.4.0",
         "hamburger-react": "^2.1.1",
         "node-sass": "^4.14.1",
@@ -52,7 +52,7 @@
         "react-dom": "^16.12.0",
         "react-modal-image": "^2.5.0",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "^3.4.0"
+        "react-scripts": "^3.4.3"
     },
     "devDependencies": {
         "eslint-config-prettier": "^6.11.0",

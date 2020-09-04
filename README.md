@@ -13,3 +13,19 @@ For automating the deployment of the website to GitHub pages, I created a workfl
 ### Design
 
 There are a lot of website designs out there, but I wanted mine to feel unique - so I designed it from scratch, in Paint.NET. I felt it important to ensure that my website scaled with window size, so that it didn't matter whether it was being viewed in 720p or 4k - it would always look exactly the way I wanted it to.
+
+### Usage
+
+This website uses `yarn` to manage dependencies. After cloning the repository
+from GitHub, you need to install the dependencies listed in the `package.json`.
+Once that is complete, you can simply run the site and access it on
+`localhost:3000`.
+
+```
+git clone https://github.com/Matteas-Eden/matteas-eden.github.io
+cd matteas-eden.github.io
+yarn install
+yarn start
+```
+
+Alternatively, just access the website where it's hosted; [matteas.nz](https://matteas.nz).

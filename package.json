@@ -44,7 +44,7 @@
     "dependencies": {
         "@material-ui/core": "^4.11.0",
         "@material-ui/icons": "^4.5.1",
-        "@mdi/js": "^5.5.55",
+        "@mdi/js": "^5.6.55",
         "@mdi/react": "^1.4.0",
         "hamburger-react": "^2.2.0",
         "node-sass": "^4.14.1",
@@ -55,11 +55,11 @@
         "react-scripts": "^3.4.3"
     },
     "devDependencies": {
-        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-prettier": "^6.12.0",
         "eslint-plugin-prettier": "^3.1.4",
         "gh-pages": "^3.1.0",
         "husky": "^4.3.0",
-        "lint-staged": "^10.3.0",
-        "prettier": "^2.1.1"
+        "lint-staged": "^10.4.0",
+        "prettier": "^2.1.2"
     }
 }

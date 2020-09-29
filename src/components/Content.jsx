@@ -11,7 +11,7 @@ import { Projects } from '../pages/Projects';
 
 import { Footer } from '../components/Footer';
 
-export const ContentComponent = props => {
+export const ContentComponent = (props) => {
     return (
         <div className="content card">
             <FrostedGlassView bg={props.bg} className="my-glass">

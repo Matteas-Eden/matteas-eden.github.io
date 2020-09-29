@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SignatureBasic = props => {
+export const SignatureBasic = (props) => {
     return (
         <svg
             width={props.size ? props.size : '1em'}

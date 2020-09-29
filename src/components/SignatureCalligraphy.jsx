@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SignatureCalligraphy = props => {
+export const SignatureCalligraphy = (props) => {
     return (
         <svg
             width={props.size ? props.size : '1em'}

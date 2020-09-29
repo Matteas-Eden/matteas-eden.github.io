@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const Projects = props => {
+export const Projects = (props) => {
     const classes = useStyles(props);
 
     return (

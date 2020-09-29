@@ -6,14 +6,14 @@ import { mdiGithub, mdiLinkedin, mdiDeviantart } from '@mdi/js';
 
 const useStyles = makeStyles({
     footer: {
-        width: props => (props.mobile ? '94vw' : '74vw'),
-        height: props => (props.mobile ? '8vh' : '10vh'),
+        width: (props) => (props.mobile ? '94vw' : '74vw'),
+        height: (props) => (props.mobile ? '8vh' : '10vh'),
         borderTop: '1px solid black',
         position: 'absolute',
-        bottom: props => (props.mobile ? '1vmin' : '0'),
-        marginLeft: props => (props.mobile ? '0vw' : '-1vw'),
-        paddingLeft: props => (props.mobile ? '1vw' : '1vw'),
-        paddingRight: props => (props.mobile ? '0vw' : '-1vw'),
+        bottom: (props) => (props.mobile ? '1vmin' : '0'),
+        marginLeft: (props) => (props.mobile ? '0vw' : '-1vw'),
+        paddingLeft: (props) => (props.mobile ? '1vw' : '1vw'),
+        paddingRight: (props) => (props.mobile ? '0vw' : '-1vw'),
     },
     root: {
         fontFamily: 'high-tower',
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const Footer = props => {
+export const Footer = (props) => {
     const classes = useStyles(props);
 
     return (

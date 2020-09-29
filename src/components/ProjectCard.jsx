@@ -126,7 +126,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const ProjectCard = props => {
+export const ProjectCard = (props) => {
     const classes = useStyles(props);
 
     return (
@@ -189,7 +189,7 @@ export const ProjectCard = props => {
                     alignItems="flex-start"
                 >
                     {props.labels &&
-                        props.labels.map(label => (
+                        props.labels.map((label) => (
                             <Grid
                                 item
                                 className={

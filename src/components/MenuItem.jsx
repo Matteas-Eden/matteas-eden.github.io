@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-export const MenuItem = props => {
+export const MenuItem = (props) => {
     return (
         <Button
             onClick={() => {

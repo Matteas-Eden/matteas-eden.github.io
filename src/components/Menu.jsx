@@ -7,7 +7,7 @@ import { SignatureCalligraphy } from './SignatureCalligraphy';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-export const Menu = props => {
+export const Menu = (props) => {
     return (
         <div className="menu card">
             <FrostedGlassView bg={props.bg} className="my-glass">

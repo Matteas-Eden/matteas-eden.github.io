@@ -6,13 +6,14 @@ const useStyles = makeStyles({
         fontFamily: 'high-tower',
         color: '#000',
         fontSize: '5vmin',
-        height: props => (props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '70vh'),
+        height: (props) =>
+            props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '70vh',
         overflowX: 'none',
         overflowY: 'auto',
     },
 });
 
-export const About = props => {
+export const About = (props) => {
     const classes = useStyles(props);
 
     return (

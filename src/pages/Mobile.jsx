@@ -13,7 +13,7 @@ import { Projects } from '../pages/Projects';
 import { MobileHeader } from '../components/MobileHeader';
 import { Footer } from '../components/Footer';
 
-export const Mobile = props => {
+export const Mobile = (props) => {
     return (
         <div className="mobile-content card">
             <FrostedGlassView mobile bg={props.bg} className="my-glass">

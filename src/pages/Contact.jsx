@@ -7,7 +7,8 @@ const useStyles = makeStyles({
         textTransform: 'none',
         overflowY: 'auto',
         overflowX: 'none',
-        height: props => (props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '80vh'),
+        height: (props) =>
+            props.mobile ? 'calc(90vh - 15vmin - 1vw)' : '80vh',
     },
     text: {
         fontFamily: 'high-tower',
@@ -16,7 +17,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const Contact = props => {
+export const Contact = (props) => {
     const classes = useStyles(props);
 
     return (

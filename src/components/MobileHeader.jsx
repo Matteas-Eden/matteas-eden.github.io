@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { AppBar, Select, MenuItem } from '@material-ui/core';
 
-export const MobileHeader = props => {
+export const MobileHeader = (props) => {
     let history = useHistory();
     return (
         <AppBar
@@ -26,7 +26,7 @@ export const MobileHeader = props => {
                     fontFamily: 'high-tower',
                     color: '#000',
                 }}
-                onChange={event => {
+                onChange={(event) => {
                     let item = event.target.value;
                     console.log(history);
                     if (item === 'Home') history.push('/');
@@ -35,7 +35,7 @@ export const MobileHeader = props => {
                 }}
             >
                 {['Home', 'About', 'Projects', 'Resumé', 'Contact'].map(
-                    page => (
+                    (page) => (
                         <MenuItem value={page}>{page}</MenuItem>
                     )
                 )}

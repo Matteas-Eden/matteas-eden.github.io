@@ -83,7 +83,7 @@ const useStyles = makeStyles({
     },
 });
 
-export const ContactForm = props => {
+export const ContactForm = (props) => {
     const classes = useStyles(props);
 
     return (

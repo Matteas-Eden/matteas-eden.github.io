@@ -34,7 +34,7 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
 }
 
 .frosted-glass::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -78,24 +78,22 @@
 
 .frosted-glass .frosted-glass-content::before,
 .frosted-glass .frosted-glass-content::after {
-    content: "";
+    content: '';
     display: table;
 }
 
 .has-frosted-glass {
     .frosted-glass {
-        box-shadow: 0 0.5em 1em rgba(0, 0, 0, .3);
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
     }
 }
 
 /* Extra Stuff */
 .my-glass {
-    
     .frosted-glass-content {
         color: white;
         padding: inherit;
         min-height: 90vh;
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255, 255, 255, 0.1);
     }
 }
-

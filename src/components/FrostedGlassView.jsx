@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FrostedGlassView = props => {
+export const FrostedGlassView = (props) => {
     return (
         <div
             style={{ backgroundColor: props.bg, backgroundImage: props.bg }}

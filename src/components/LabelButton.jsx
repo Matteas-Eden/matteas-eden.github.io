@@ -11,11 +11,11 @@ const useStyles = makeStyles({
         maxHeight: '80%',
     },
     text: {
-        position: props => (props.mobile ? 'relative' : 'static'),
+        position: (props) => (props.mobile ? 'relative' : 'static'),
         top: '2vmin',
         fontFamily: 'high-tower',
         color: '#000',
-        fontSize: props => (props.mobile ? '4vmin' : '3.5vw'),
+        fontSize: (props) => (props.mobile ? '4vmin' : '3.5vw'),
     },
     icon: {
         position: 'relative',
@@ -49,7 +49,7 @@ const useStyles = makeStyles({
  * * img - Icon for label (optional)
  * * colour/color - Colour of icon (optional, defaults to black)
  */
-export const LabelButton = props => {
+export const LabelButton = (props) => {
     const classes = useStyles(props);
 
     return (
@@ -57,6 +57,7 @@ export const LabelButton = props => {
             className={props.small ? classes.smallButton : classes.button}
             style={props.mobile && !props.small ? { maxHeight: '11vmin' } : {}}
             href={'' || props.link}
+            onClick={'' || props.onClick}
         >
             <Grid container direction="row">
                 {props.img && (

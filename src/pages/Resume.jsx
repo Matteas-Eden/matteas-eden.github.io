@@ -31,7 +31,16 @@ const useStyles = makeStyles({
     },
 });
 
-export const Resume = props => {
+const download = () => {
+    const resume = document.getElementById('resume');
+    if (resume) {
+        resume.href = ResumeFile;
+        resume.download = 'MattEdenResume.pdf';
+        resume.click();
+    }
+};
+
+export const Resume = (props) => {
     const classes = useStyles();
     const landscapeMatches = useMediaQuery('(min-aspect-ratio: 1000/750)');
 
@@ -67,10 +76,18 @@ export const Resume = props => {
                     <br />
                     <LabelButton
                         text="Download PDF"
-                        link={ResumeFile}
+                        onClick={download}
                         img={mdiDownload}
                         mobile={props.mobile}
                     />
+                    <a
+                        style={{ visibility: 'hidden', display: 'none' }}
+                        id="resume"
+                        download="MattEdenResume.pdf"
+                        href={ResumeFile}
+                    >
+                        {'Resume'}
+                    </a>
                 </Grid>
                 <Grid item>
                     <ModalImage

@@ -5,13 +5,13 @@
     "main.js.map": "/static/js/main.3b4ea1ab.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.43123930.js",
     "runtime-main.js.map": "/static/js/runtime-main.43123930.js.map",
-    "static/js/2.8a1f7bc7.chunk.js": "/static/js/2.8a1f7bc7.chunk.js",
-    "static/js/2.8a1f7bc7.chunk.js.map": "/static/js/2.8a1f7bc7.chunk.js.map",
+    "static/js/2.b6f4a83e.chunk.js": "/static/js/2.b6f4a83e.chunk.js",
+    "static/js/2.b6f4a83e.chunk.js.map": "/static/js/2.b6f4a83e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.42c33f3c0a647d9755e3ac8ed9ebf51b.js": "/precache-manifest.42c33f3c0a647d9755e3ac8ed9ebf51b.js",
+    "precache-manifest.66fd1d723e9c745c635705d28d835cf4.js": "/precache-manifest.66fd1d723e9c745c635705d28d835cf4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.ccab0f62.chunk.css.map": "/static/css/main.ccab0f62.chunk.css.map",
-    "static/js/2.8a1f7bc7.chunk.js.LICENSE.txt": "/static/js/2.8a1f7bc7.chunk.js.LICENSE.txt",
+    "static/js/2.b6f4a83e.chunk.js.LICENSE.txt": "/static/js/2.b6f4a83e.chunk.js.LICENSE.txt",
     "static/media/TokyoStreet.png": "/static/media/TokyoStreet.f491be40.png",
     "static/media/anzen.png": "/static/media/anzen.d1116f46.png",
     "static/media/chogokubosogothic.ttf": "/static/media/chogokubosogothic.56d6b93a.ttf",
@@ -25,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.43123930.js",
-    "static/js/2.8a1f7bc7.chunk.js",
+    "static/js/2.b6f4a83e.chunk.js",
     "static/css/main.ccab0f62.chunk.css",
     "static/js/main.3b4ea1ab.chunk.js"
   ]

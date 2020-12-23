@@ -45,10 +45,10 @@
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.32",
         "@fortawesome/free-solid-svg-icons": "^5.15.1",
-        "@fortawesome/react-fontawesome": "^0.1.13",
+        "@fortawesome/react-fontawesome": "^0.1.14",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
-        "node-sass": "4.14.1",
+        "node-sass": "5.0.0",
         "normalize.css": "^8.0.1",
         "popper.js": "^1.15.0",
         "react": "^17.0.1",
